@@ -245,27 +245,63 @@ a.detail-btn {
 		margin-bottom: 10px;
 		.bank-name {
 			display: block;
+			font-size: 20px;
 		}
 		strong {
 			color: $red;
 		}
 	}
 	.sug-text {
-		font-size: 12px;
+		font-size: 14px;
 		display: block;
+		margin: 10px 0;
+		text-align: center;
+		color: $red;
+	}
+	a.suggest-btn {
+		width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
 	}
 }
-.card-main-content {
+
+.main-title {
+	// text-align: center;
+	color: $gray;
+	font-size: 18px;
+	padding: 5px 15px;
 	border: 1px solid $gray-lighter;
-	margin-top: 10px;
-	.main-title {
-		text-align: center;
-		color: $gray;
-		font-size: 18px;
-		padding: 5px;
-		border-bottom: 1px solid $gray-lighter;
+	border-bottom: 0;
+}
+.text-body {
+	padding: 15px 15px 20px;
+	border: 1px solid $gray-lighter;
+	line-height: 1.5;
+	h4 {
+		font-size: 24px;
+		margin: 0 auto;
 	}
-	.text-body {
-		padding: 15px;
+	h5 {
+		display: inline-block;
+		margin: 0 0 10px;
+	}
+	.orange-color {
+		color: $orange;
+	}
+	.strong-text {
+		font-size: 20px;
+		margin-top: 10px;
+	}
+	em {
+		color: $orange;
+		font-size: 16px;
+		font-weight: bold;
+	}
+	ul {
+		margin: 10px 0;
+		padding: 0;
+	}
+	img {
+		max-width: 100%;
 	}
 }
