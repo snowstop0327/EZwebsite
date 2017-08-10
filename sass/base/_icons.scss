@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "ez-website";
+  src:url("fonts/ez-website.eot?v=7");
+  src:url("fonts/ez-website.eot?v=7#iefix") format("embedded-opentype"),
+    url("fonts/ez-website.woff?v=7") format("woff"),
+    url("fonts/ez-website.ttf?v=7") format("truetype"),
+    url("fonts/ez-website.svg?v=7#ez-website") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "ez-website" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "ez-website" !important;
+  font-style: normal !important;
+  font-weight: normal;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+  content: "\69";
+}
+.icon-arrow-left:before {
+  content: "\6a";
+}
+.icon-arrow-right:before {
+  content: "\6b";
+}
+.icon-arrow-up:before {
+  content: "\6c";
+}
+.icon-help:before {
+  content: "\62";
+}
+.icon-search:before {
+  content: "\63";
+}
+.icon-mobile:before {
+  content: "\64";
+}
+.icon-fb:before {
+  content: "\66";
+}
+.icon-user:before {
+  content: "\61";
+}
+.icon-ship-price:before {
+  content: "\67";
+}
+.icon-gplus:before {
+  content: "\65";
+}
+.icon-cate:before {
+  content: "\6d";
+}
+.icon-cleaning:before {
+  content: "\6e";
+}
+.icon-speaker:before {
+  content: "\6f";
+}
+.icon-cate-mb:before {
+  content: "\70";
+}
+.icon-baby-cart:before {
+  content: "\72";
+}
+.icon-cabinet:before {
+  content: "\73";
+}
+.icon-cosmetics:before {
+  content: "\74";
+}
+.icon-diamond:before {
+  content: "\75";
+}
+.icon-juice:before {
+  content: "\76";
+}
+.icon-laptop:before {
+  content: "\77";
+}
+.icon-medicine:before {
+  content: "\78";
+}
+.icon-scooter:before {
+  content: "\79";
+}
+.icon-shirt:before {
+  content: "\7a";
+}
+.icon-basketball:before {
+  content: "\41";
+}
+.icon-shoe:before {
+  content: "\71";
+}
+.icon-book:before {
+  content: "\42";
+}
+.icon-stationery:before {
+  content: "\43";
+}
+.icon-eye:before {
+  content: "\44";
+}
+.icon-chat:before {
+  content: "\45";
+}
+.icon-delivery-truck:before {
+  content: "\68";
+}
+.icon-like:before {
+  content: "\46";
+}
+.icon-shop:before {
+  content: "\47";
+}
+.icon-log-out:before {
+  content: "\48";
+}
+.icon-ranking:before {
+  content: "\49";
+}
+.icon-arrow-thin-left:before {
+  content: "\4a";
+}
+.icon-dash:before {
+  content: "\4d";
+}
+.icon-heater:before {
+  content: "\4e";
+}
+.icon-display:before {
+  content: "\4f";
+}
+.icon-camera:before {
+  content: "\50";
+}
+.icon-tv:before {
+  content: "\51";
+}
+.icon-video:before {
+  content: "\52";
+}
+.icon-frig:before {
+  content: "\53";
+}
+.icon-coffee:before {
+  content: "\54";
+}
+.icon-vacuum:before {
+  content: "\55";
+}
+.icon-dehumid:before {
+  content: "\56";
+}
+.icon-close:before {
+  content: "\57";
+}
+.icon-ticket:before {
+  content: "\58";
+}
+.icon-week:before {
+  content: "\59";
+}
+.icon-new-1:before {
+  content: "\5a";
+}
+.icon-success:before {
+  content: "\30";
+}
+.icon-recommend:before {
+  content: "\31";
+}
+.icon-keyword:before {
+  content: "\32";
+}
+.icon-time:before {
+  content: "\33";
+}
+.icon-star:before {
+  content: "\34";
+}
+.icon-down:before {
+  content: "\35";
+}
+.icon-dash-2:before {
+  content: "\36";
+}
+.icon-up:before {
+  content: "\37";
+}
+.icon-new-2:before {
+  content: "\38";
+}
+.icon-ipad:before {
+  content: "\4b";
+}
+.icon-ram:before {
+  content: "\4c";
+}
+.icon-usb:before {
+  content: "\21";
+}
+.icon-desktop:before {
+  content: "\22";
+}
+.icon-cpu:before {
+  content: "\23";
+}
+.icon-hard-drive:before {
+  content: "\24";
+}
+.icon-crown:before {
+  content: "\39";
+}
+.icons-atm, .icons-card, .icons-cart, .icons-delete-btn, .icons-ez-app, .icons-ez-plugin, .icons-familymart, .icons-gift, .icons-like, .icons-logo, .icons-open-gift, .icons-seven {
+  display: inline-block;
+  background: url('../asset/images/icons-sprite.png') no-repeat;
+  @include background-size(180px auto);
+}
+.icons-atm {
+    background-position: 0 0;
+    height: 16px;
+    width: 23px;
+}
+
+.icons-card {
+    background-position: 0 -16.5px;
+    height: 16px;
+    width: 23px;
+}
+
+.icons-cart {
+    background-position: 0 -33px;
+    height: 21px;
+    width: 24px;
+}
+
+.icons-delete-btn {
+    background-position: 0 -54.5px;
+}
+
+.icons-ez-app {
+    background-position: 0 -72px;
+    height: 50px;
+    width: 50px;
+}
+
+.icons-ez-plugin {
+    background-position: 0 -122.5px;
+    height: 50px;
+    width: 50px;
+}
+
+.icons-familymart {
+    background-position: 0 -173px;
+    height: 16px;
+    width: 16px;
+}
+
+.icons-gift {
+    background-position: 0 -189.5px;
+    height: 18px;
+    width: 17px;
+}
+
+.icons-like {
+    background-position: 0 -208px;
+    height: 20px;
+    width: 20px;
+}
+
+.icons-logo {
+    background-position: 0 -228.5px;
+    height: 50px;
+    width: 180px;
+}
+
+.icons-open-gift {
+    background-position: 0 -279px;
+    height: 23px;
+    width: 22px;
+}
+
+.icons-seven {
+    background-position: 0 -319px;
+    height: 16px;
+    width: 17px;
+}

@@ -1,0 +1,98 @@
+footer{
+	margin: 45px 0 0 0;
+	padding: 0 0 20px 0;
+	background-color: #e6e6e6;
+	color: $gray;
+	min-width: 1024px;
+	.footer-logo{
+		float: left;
+		width: 25%;
+		margin: 20px 0 0 15px;
+	}
+	.footer-list{
+		float: left;
+		width: 15%;
+		margin: 20px 0 0 0;
+	}
+	.ez-slogan{
+		display: inline-block;
+		color: $gray-dark;
+		font-size: $font-size-small;
+	}
+	.ez-rights{
+		display: inline-block;
+		margin: 10px 0 15px 0;
+		font-size: $font-size-small;
+		color: $gray;
+	}
+	.ez-share{
+		.mobile{
+			float: left;
+			display: inline-block;
+			margin: 1px 11px 0 0;
+		    padding: 0 10px 0 0;
+		    border-right: 1px solid #ccc;
+		    color: $gray;
+		    &:before{
+		    	float: left;
+		    	font-size: 25px;
+		    }
+		    span{
+		    	display: inline-block;
+		    	margin-top: 3px;
+		    }
+		}
+		a.google{
+			float: left;
+			display: inline-block;
+    		margin: 4px 5px 0 0;
+			color: $gray-dark;
+			&:hover{
+				color: #db402c;
+				text-decoration: none;
+			}
+			&:before{
+				font-size: 22px;
+			}
+		}
+		a.fb{
+			color: $gray-dark;
+			&:hover{
+				color: #3b5998;
+				text-decoration: none;
+			}
+			&:before{
+				font-size: 30px;
+			}
+		}
+	}
+	.list-title{
+		display: block;
+		margin: 0 0 10px 0;
+		color: $gray-darker;
+	}
+	.option{
+		display: block;
+		margin: 0 0 5px 0;
+		font-size: $font-size-small;
+		color: $gray;
+	}
+	.app-area{
+		float: left;
+		width: 28%;
+		margin: 20px 0 0 0;
+		.icons-ez-app,.icons-ez-plugin{
+			float: left;
+			margin: 0 15px 0 0;
+		}
+		.app-download{
+			font-size: $font-size-small;
+			color: $gray;
+		}
+		.app-border{
+			margin: 0 5px 0 0;
+			padding: 0 5px 0 0;
+			border-right: 1px solid $gray;
+		}
+	}
+}

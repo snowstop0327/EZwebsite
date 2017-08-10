@@ -1,0 +1,42 @@
+.content{
+	padding-top: 73px;
+}
+.block-area{
+	background-color: $white;
+	border: 1px solid $gray-lighter;
+	@include box-shadow(rgba(0,0,0,0.04) 0px 1px 4px);
+	@include border-radius(2px);
+	.title{
+		margin: 0;
+		padding: 10px;
+		border-bottom: 1px solid $gray-lighter;
+		background-color: $gray-lightest;
+		color: $gray;
+		font-weight: 500;
+	}
+}
+.easy-top{
+	position: fixed;
+	bottom: 15px;
+    right: 15px;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: $gray;
+	text-align: center;
+	cursor: pointer;
+	color: $white;
+	@include transition(all .2s ease-in-out);
+	@include border-radius(2px);
+	z-index: 4;
+	&:before{
+		display: inline-block;
+		margin: 7px 0 0 0;
+		font-size: 24px;
+		font-weight: bold;
+	}
+	&:hover{
+		background-color: $orange-light;
+		color: $white
+	}
+}

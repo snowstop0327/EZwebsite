@@ -1,0 +1,124 @@
+@media (min-width: 1024px) and (max-width: 1199px) {
+	.navbar-input{
+		width: 405px;
+	}
+	.navbar-form .dropdown-menu.expanded{
+		width: 403px;
+	}
+	a.see-all-btn{
+		right: 15px;
+	}
+	a.market-btn{
+		right: 12px;
+	}
+	.search-rst{
+		.pd-name{
+			width: 29%;
+		}
+		.pd-detail{
+			right: 160px;
+			width: 23%;
+		}
+		.spec-link{
+			left: 270px;
+		}
+	}
+	.aside-area{
+		.pd-name{
+			width: 64%;
+		}
+		.sale-name{
+			width: 53%;
+		}
+	}
+	.product-price-rst{
+		.product-price-rst-head{
+			li.head-name{
+				width: 250px;
+			}
+			li.head-platform{
+				padding: 10px 25px;
+    			width: 185px;
+			}
+			li.head-price{
+				padding: 10px 66px;
+    			width: 185px;
+			}
+		}
+	}
+	.product-list {
+		.item-name{
+			width: 250px;
+		}
+		.arrow-left-tag{
+			width: 140px;
+		}
+		.item-platform-name{
+			left: 391px;
+    		width: 185px;
+		}
+		.item-price{
+			left: 575px;
+    		width: 185px;
+		}
+	}
+	.spec-area{
+		.spec-pd{
+			.pd-img{
+				width: 165px;
+    			height: 165px;
+    			line-height: 165px;
+			}
+		}
+	}
+	a.sev-area{
+		width: 8.59%;
+	}
+	.card-table{
+		.card-gift{
+			width: 200px;
+		}
+		.card-attr{
+			width: 150px;
+		}
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.navbar-input{
+		width: 445px;
+	}
+	.navbar-form .dropdown-menu.expanded{
+		width: 444px;
+	}
+	a.sev-area{
+		width: 8.59%;
+	}
+	.atcl-area{
+		.atcl-left{
+			width: 45%;
+		}
+		.atcl-right{
+			width: 27%;
+		}
+	}
+	.search-rst{
+		.pd-name{
+			width: 29%;
+		}
+		.pd-detail{
+			right: 160px;
+			width: 23%;
+		}
+		.spec-link{
+			left: 270px;
+		}
+	}
+	.aside-area{
+		.pd-name{
+			width: 64%;
+		}
+		.sale-name{
+			width: 53%;
+		}
+	}
+}

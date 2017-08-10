@@ -1,0 +1,271 @@
+.credit-title{
+	margin: 0;
+}
+.creditcard-rst{
+	border-top: 1px solid $gray-lighter;
+}
+table {
+    border-collapse: collapse;
+    margin-bottom: 3em;
+    width: 100%;
+    background: #fff;
+}
+th,td{
+	padding: 0.75em;
+	border: none;
+	text-align: left;
+}
+thead{
+	border: 1px solid $gray-lighter;
+	@include border-radius(2px);
+	@include box-shadow(rgba(0,0,0,0.04) 0px 1px 4px);
+}
+thead th {
+	font-size: $font-size-large;
+    font-weight: bold;
+    color: $black;
+    white-space: nowrap;
+}
+tbody th {
+	background-color: #f5f5f5;
+}
+tbody td {
+	border: 1px solid $gray-lighter;
+}
+tbody tr{
+	border-bottom: 1px solid $gray-lighter;
+}
+tbody tr:nth-child(2n-1) {
+    transition: all .125s ease-in-out;
+}
+tbody tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* For appearance */
+.sticky-wrap {
+	margin: 25px 0 0 0;
+	overflow-x: auto;
+	overflow-y: hidden;
+	position: relative;
+	width: 100%;
+}
+.sticky-wrap .sticky-thead,
+.sticky-wrap .sticky-col,
+.sticky-wrap .sticky-intersect {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: all .125s ease-in-out;
+	z-index: 50;
+	width: auto; /* Prevent table from stretching to full size */
+}
+.sticky-wrap .sticky-thead {
+	box-shadow: 0 0.25em 0.1em -0.1em rgba(0,0,0,.125);
+	z-index: 100;
+	width: 100%; /* Force stretch */
+}
+.sticky-wrap .sticky-intersect {
+	opacity: 1;
+	z-index: 150;
+
+}
+.sticky-wrap .sticky-intersect th {
+	background-color: #fdf5ce;
+	color: #333;
+	//height: 60px;
+}
+.sticky-wrap td,
+.sticky-wrap th {
+	box-sizing: border-box;
+}
+.sticky-wrap.overflow-y {
+	overflow-y: auto;
+	max-height: 70vh;
+}
+.card-table,.sticky-thead{
+	.suggest-area{
+		position: relative;
+		background-color: #fff7ec;
+		height: 190px;
+		td{
+			position: relative;
+			border: 1px solid $gray-lighter;
+		}
+		.hot-tag{
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			display: inline-block;
+			padding: 2px 4px;
+			background-color: $red;
+			color: $white;
+			font-size: $font-size-small;
+			@include border-radius(2px);
+		}
+		.sug-text{
+			// position: absolute;
+	  //   top: 200px;
+	  //   left: 33px;
+	    display: block;
+	    margin-top: 10px;
+	    color: $red;
+	    font-size: $font-size-small;
+		}
+	}
+	.td-card-img{
+		text-align: center;
+		.link-btn {
+			position: relative;
+			border-radius: 2px;
+			display: block;
+			padding: 6px;
+			max-width: 120px;
+			margin: 5px auto;
+			transition: 0.5s ease all;
+		}
+	}
+	.card-img{
+		display: inline-block;
+		width: 140px;
+		img{
+			max-width: 100%;
+		}
+	}
+	.card-name{
+		margin: 0;
+		a{
+			display: inline-block;
+			color: $black;
+			font-weight: bold;
+			font-size: $font-size-large;
+			&.suggest-card{
+				color: $red;
+				font-size: $font-size-xlarge;
+			}
+		}
+		.bank-name{
+			display: block;
+			color: $gray-dark;
+		}
+	}
+	.card-gift{
+		margin: 10px 0 0 0;
+		padding: 0;
+		// width: 270px;
+		font-size: $font-size-small;
+		color: $gray-dark;
+		li{
+			margin: 5px 0 0 0;
+		}
+		&.suggest-gift{
+			font-size: $font-size-base;
+		}
+	}
+	.card-cond{
+		margin: 0;
+		color: $gray-dark;
+		line-height: 1.5em;
+		font-size: $font-size-small;
+	}
+	.card-attr{
+		margin:0;
+		padding: 0;
+		width: 248px;
+		margin-right: -10px;
+		color: $gray-dark;
+		font-size: $font-size-small;
+		li{
+			margin: 0 0 3px 0;
+		}
+		&.suggest-attr{
+			font-size: $font-size-base;
+		}
+	}
+	.card-time{
+		color: $gray-dark;
+		font-size: $font-size-small;
+	}
+	a.market-btn{
+		position: relative;
+		right: 0;
+		bottom: 0;
+	}
+}
+.card-notice{
+	padding: 0;
+	font-size: $font-size-small;
+	color: $gray;
+}
+a.suggest-btn{
+	z-index: 2;
+	margin: 5px 0 0 0;
+	padding: 6px 0px;
+	min-width: 120px;
+	border: 1px solid $orange-light;
+	@include border-radius(2px);
+	background-color: $orange-light;
+	color: $white;
+	font-size: $font-size-base;
+	font-weight: bold;
+	span.btn-text{
+		position: relative;
+		display: inline-block;
+	    margin: 0 0 0 -11px;
+		&:before{
+			position: absolute;
+	    right: -17px;
+	    top: 3px;
+			font-weight: bold;
+		}
+	}
+	&:hover{
+		text-decoration: none;
+		background-color: $orange;
+	}
+	&:active,&:focus{
+		background-color: $orange;
+		@include box-shadow(rgba(0,0,0,0.1) 0px 1px 4px inset);
+	}
+}
+a.detail-btn {
+	margin-top: 10px !important;
+	border: 1px solid #fff7ec;
+	&:hover {
+		color: $gray-dark;
+		border: 1px solid $gray-light;
+		background: $white;
+		text-decoration: none;
+	}
+}
+.top-info {
+	font-size: 28px;
+	.title-section {
+		margin-bottom: 10px;
+		.bank-name {
+			display: block;
+		}
+		strong {
+			color: $red;
+		}
+	}
+	.sug-text {
+		font-size: 12px;
+		display: block;
+	}
+}
+.card-main-content {
+	border: 1px solid $gray-lighter;
+	margin-top: 10px;
+	.main-title {
+		text-align: center;
+		color: $gray;
+		font-size: 18px;
+		padding: 5px;
+		border-bottom: 1px solid $gray-lighter;
+	}
+	.text-body {
+		padding: 15px;
+	}
+}

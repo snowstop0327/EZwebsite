@@ -1,0 +1,72 @@
+//== Colors
+//
+//## Gray and brand colors for use across EZprice.
+$orange: #ff6706 !default;
+$orange-light: #ff7f00 !default;
+$blue: #2B81DA !default;
+$red: #e53331 !default;
+$white: #ffffff !default;
+$yellow: #FFCB00 !default;
+$green: #24A96E !default;
+
+$gray-lightest: #f5f5f5 !default;
+$gray-lighter: #e8e8e8 !default;
+$gray-light: #c5c5c5 !default;
+$gray: #7f8492 !default;
+$gray-dark: #656c7d !default;
+$gray-darker: #393f4e !default;
+$black: #1e2430 !default;
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg: $white !default;
+//** Global text color on `<body>`.
+$text-color: $black !default;
+
+//** Global textual link color.
+$link-color: $blue !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+$font-weight:400 !default;
+$font-family-default: Verdana,"Microsoft JhengHei",\5FAE\8EDF\6B63\9ED1\9AD4, \65B0\7D30\660E\9AD4,Helvetica, Arial, sans-serif !default;
+$font-family-pdname: Verdana,"Microsoft JhengHei",\5FAE\8EDF\6B63\9ED1\9AD4, \65B0\7D30\660E\9AD4,!default;
+$font-family-price: "Helvetica" !default;
+
+$font-size-base: 14px !default;
+$font-size-small: ceil(($font-size-base * 0.85)) !default; //~12px
+$font-size-large: ceil(($font-size-base * 1.14)) !default; // ~16px
+$font-size-xlarge: ceil(($font-size-base * 1.25)) !default; // ~18px
+$font-size-xxlarge: ceil(($font-size-base * 1.42)) !default; // ~20px
+$font-size-price: floor(($font-size-base * 2.15)) !default; //~30px
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        1.428571429 !default; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+//== Buttons
+//
+//## For each of EZprice's buttons, define text, background and border color.
+
+$btn-font-weight:                400 !default;
+
+$btn-default-color:              #7F8492 !default;
+$btn-default-bg:                 #fff !default;
+$btn-default-border:             #7F8492 !default;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $orange-light !default;
+$btn-primary-border:             $orange !default;
+$btn-primary-hover-border:       darken($btn-primary-border, 10%) !default;
+
+
+

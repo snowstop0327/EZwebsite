@@ -1,0 +1,46 @@
+.error-area{
+	max-height: 235px;
+    overflow: hidden;
+    background: url("/asset/images/error-bg.png") $gray-lightest;
+	background-size: 100%;
+	border-radius: 2px;
+	font-size: $font-size-large;
+}
+.error-img{
+	float: left;
+	margin: 0px 10px 0 5px;
+	width: 200px;
+}
+.error-word{
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-size: $font-size-large;
+	strong{
+		color: $orange-light;
+	}
+}
+.error-word2{
+	margin-top: 35px;
+	font-size: $font-size-xlarge;
+	strong{
+		display: inline-block;
+		margin: -3px 0px;
+		max-width: 362px;
+		max-height: 22px;
+		overflow: hidden;
+		color: $orange-light;
+	}
+}
+.sug-word{
+	li{
+		margin: 10px 0;
+		&:before{
+			content: "";
+			display: inline-block;
+			margin: 0 8px 0 0;
+			width: 12px;
+			height: 12px;
+			background-color: $orange-light;
+		}
+	}
+}

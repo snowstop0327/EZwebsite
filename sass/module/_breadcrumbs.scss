@@ -1,0 +1,19 @@
+.breadcrumb{
+	display: inline-block;
+	margin: 0 0 15px 0;
+	padding: 0;
+	color: $gray-light;
+	li{
+		display: inline-block;
+		a{
+			display: inline-block;
+			margin: 16px 0 0 0;
+			padding: 0 5px;
+			color: $gray-light;
+			font-size: $font-size-small;
+			&:first-child{
+				padding: 0 5px 0 0;
+			}
+		}
+	}
+}

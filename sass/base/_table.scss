@@ -1,0 +1,152 @@
+.table{
+	display: table;
+	width: 100%;
+	margin: 20px 0;
+	background-color: $white;
+	.thead{
+		display: table-header-group;
+	}
+	.tr{
+		display: table-row;
+	}
+	.th,.td{
+		position: relative;
+		display: table-cell;
+		padding: 10px;
+	}
+	.th{
+		background-color: $gray-lightest;
+		color: $black;
+		font-weight: bold;
+		font-size: $font-size-base;
+		&.th-rank{
+			width: 70px;
+			text-align: center;
+		}
+		&.th-word{
+			width: 520px;
+		}
+		&.th-count{
+			width: 260px;
+		}
+		&.th-rchange{
+			width: 260px;
+		}
+	}
+	.tbody{
+		display: table-row-group;
+		.tr:hover{
+			background-color: #f9f9f9;
+		}
+		.td{
+			border-bottom: 1px solid $gray-lighter;
+		}
+		.td-word{
+			h3{
+				margin: 0;
+				a{
+					display: block;
+					max-height: 21px;
+					line-height: 21px;
+					overflow: hidden;
+					color: $black;
+					&:hover{
+						color: $orange-light;
+					}
+				}
+			}
+			&.td-rec-pd{
+				a{
+					max-height: 44px;
+				}
+			}
+		}
+		.td-rank{
+			text-align: center;
+			font-size: $font-size-small;
+			span.rank-num{
+				position: relative;
+			    display: inline-block;
+			    height: 24px;
+			    width: 18px;
+			    line-height: 21px;
+			    padding-bottom: 2px;
+    			color: $white;
+    			.arrow{
+    				width: 0;
+				    height: 0;
+				    line-height: 0;
+				    font-size: 0;
+				    border-style: dashed;
+				    border-color: transparent;
+				    border-width: 4px 9px;
+				    border-bottom-style: solid;
+				    position: absolute;
+				    bottom: 0;
+				    left: 0;
+				    border-bottom-color: $white;
+    			}
+    			&.rank-top{
+    				background-color: $orange;
+    			}
+    			&.rank-sec{
+    				background-color: $gray;
+    			}
+			}
+		}
+		.td-count{
+			.icon-star{
+				display: inline-block;
+				&:before{
+					float: left;
+					margin: 0 0 -4px 0;
+					font-size: 15px;
+					color: $yellow;
+				}
+			}
+		}
+		.td-rchange{
+			.icon-up{
+				&:before{
+					position: absolute;
+					left: 60px;
+					display: inline-block;
+					color: $orange;
+					font-size: $font-size-xxlarge;
+				}
+			}
+			.icon-down{
+				&:before{
+					position: absolute;
+					left: 60px;
+					display: inline-block;
+					color: $green;
+					font-size: $font-size-xxlarge;
+				}
+			}
+			.icon-dash-2{
+				&:before{
+					position: absolute;
+					left: 65px;
+					top: 13px;
+					display: inline-block;
+					color: $gray-light;
+					font-size: $font-size-base;
+				}
+			}
+			.icon-new-1{
+				margin: 0 0 0 42px;
+				&:before{
+					position: absolute;
+					top: 9px;
+					font-size: 24px;
+					color: $red;
+				}
+			}
+			.new-word{
+				margin: 0 0 0 28px;
+				color: $red;
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+.filter-cate-area{
+	margin: 0;
+	ul{
+		>li.cate-filter{
+			.title{
+				width: 65px;
+				height: 32px;
+				overflow: hidden;
+			}
+		}
+	}
+		
+}
+.cate-result-w{
+	padding: 10px 0 5px 0;
+	&:before{
+		float: left;
+    	padding: 0 3px 0 0;
+		font-size: 24px;
+	}
+	h2{
+		margin: 3px 0 0 0;
+	}
+}
+.cate-title{
+	margin: 0 8px;
+    padding: 8px 0;
+	color: $gray;
+	font-weight: bold;
+	a{
+		color: $gray;
+		&:hover{
+			text-decoration: none;
+		}
+		&:before{
+			float: left;
+    		margin: -5px 0 0 -3px;
+			font-weight: bold;
+			font-size: 30px;
+		}
+	}
+}
+.filter-area ul{
+	> li.cate-f{
+		border-top: 1px dashed $gray-lighter;
+	}
+}

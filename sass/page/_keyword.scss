@@ -1,0 +1,175 @@
+.keyword-tabs,.cate-tabs{
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid $gray-lighter;
+	li{
+		display: inline-block;
+		float: left;
+		width: 25%;
+		height: 64px;
+		background-color: $white;
+		text-align: center;
+		line-height: 65px;
+		color: $gray;
+		font-size: $font-size-large;
+		font-weight: bold;
+		cursor: pointer;
+		@include transition(all .2s ease-in-out);
+		&.active{
+			outline: 1px solid rgba(255,127,0,0.2);
+			@include box-shadow(0 0 4px rgba(255,103,6,0.6));
+			@include scale(1,1.05);
+			color: $orange-light;
+		}
+		&:hover{
+			outline: 1px solid rgba(255,127,0,0.2);
+			color: $orange-light;
+			@include box-shadow(0 0 4px rgba(255,103,6,0.6));
+			@include scale(1,1.05);
+		}
+		h2{
+			margin: 0;
+			font-weight: bold;
+		}
+		.icon-week,.icon-success,.icon-new-2,.icon-crown{
+			&:before{
+				display: inline-block;
+				margin: -5px 8px 0 0;
+				vertical-align: middle;
+				font-size: 40px;
+			}
+		}
+	}
+	&.tabs-fixed{
+		position: fixed;
+		top: 0;
+		left: 0;
+		right:0;
+		margin: 0 auto;
+		width: 1110px;
+		z-index: 2;
+		border-bottom: none;
+		@include box-shadow(0 1px 2px rgba(0,0,0,0.15));
+	}
+}
+.tabs-table{
+	margin: 20px 0 0 0;
+	.time-title{
+		font-size: $font-size-base;
+		color: $gray;
+		&:before{
+			margin: 0 5px 0 0;
+			font-size: 20px;
+			vertical-align: text-bottom;
+		}
+	}
+	.select-time{
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		li{
+			position: relative;
+			margin: 0 0 0 8px;
+			.dropdown-toggle{
+				display: inline-block;
+				padding: 0 0 0 5px;
+				border-bottom: 1px solid $gray;
+				color: $gray;
+				&:before{
+					float: right;
+					margin: 3px 0 0 3px;
+					font-weight: bold;
+				}
+				&:hover{
+					text-decoration: none;
+				}
+			}
+			ul.dropdown-menu{
+				position: absolute;
+				top: 19px;
+				display: none;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+				max-height: 160px;
+		    overflow: hidden;
+		    overflow-y: scroll;
+				background-color: $white;
+				border: 1px solid $gray;
+				z-index: 1;
+				li{
+					margin: 0;
+					a{
+						display: block;
+						padding: 0 0 0 5px;
+						height: 30px;
+						line-height: 30px;
+						border-bottom: 1px solid $gray-light;
+						color: $gray;
+						&:hover{
+							text-decoration: none;
+							background-color: $gray-lighter;
+						}
+					}
+					&:last-child{
+						a{
+							border-bottom: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.cate-tabs{
+	position: relative;
+	display: flex;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	li{
+		padding: 0;
+		width: 120px;
+		min-width: 120px;
+		height: 95px;
+		line-height: 65px;
+		h2{
+			line-height: normal;
+		}
+	
+		.icon-new-2,.icon-laptop,.icon-ipad,.icon-desktop,.icon-display,.icon-ram,.icon-usb,.icon-hard-drive,.icon-cpu{
+			&:before{
+				display: inline-block;
+				margin: 0;
+				vertical-align: middle;
+				font-size: 40px;
+			}
+		}
+	}
+	.next-btn,.prev-btn{
+		position: absolute;
+		right: 0;
+		top: 35px;
+		width: 27px;
+		height: 27px;
+		line-height: 38px;
+		cursor: pointer;
+		.icon-arrow-right,.icon-arrow-left{
+			&:before{
+				font-size: 26px;
+				font-weight: bold;
+				color: $gray-light;
+			}
+		}
+		&:hover{
+			text-decoration: none;
+			.icon-arrow-right,.icon-arrow-left{
+				&:before{
+					color: $orange-light;
+				}
+			}
+		}
+	}
+	.prev-btn{
+		left: 0;
+	}
+}
