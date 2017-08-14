@@ -241,6 +241,7 @@ a.detail-btn {
 }
 .top-info {
 	font-size: 28px;
+	margin-bottom: 20px;
 	.title-section {
 		margin-bottom: 10px;
 		.bank-name {
@@ -259,7 +260,7 @@ a.detail-btn {
 		color: $red;
 	}
 	a.suggest-btn {
-		width: 100%;
+		// width: 100%;
     padding: 10px 0;
     font-size: 16px;
 	}
@@ -272,6 +273,14 @@ a.detail-btn {
 	padding: 5px 15px;
 	border: 1px solid $gray-lighter;
 	border-bottom: 0;
+}
+.card-main-content {
+	.suggest-btn {
+		display: block;
+		margin: 20px auto 0; 
+		width: 200px;
+		font-size: 20px;
+	}
 }
 .text-body {
 	padding: 15px 15px 20px;
@@ -304,4 +313,16 @@ a.detail-btn {
 	img {
 		max-width: 100%;
 	}
+}
+.small-width {
+	max-width: 720px;
+	margin: 0 auto;
+}
+.center-text {
+	text-align: center;
+}
+em.red {
+	color: $orange;
+	font-size: 15px;
+	font-style: normal;
 }
