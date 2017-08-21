@@ -201,13 +201,15 @@
 .sort-area{
 	margin: 0;
 	// background-color: $gray-lightest;
-	border-bottom: 1px solid $gray-lighter;
+	border-top: 1px solid $gray-lighter;
 	// @include border-radius(2px);
 }
 .result-w{
 	margin:0;
-	padding: 15px 0;
+	// padding: 15px 0;
+	padding: 15px 5px 5px 15px;
 	font-size: $font-size-base;
+	font-size: $font-size-small;
 	color: $gray;
 	border-bottom: 1px solid $gray-lighter;
 	&.result-w-all{
@@ -573,7 +575,7 @@
     	}
     }
 	}
-	.price-set {
+	.form-set {
 		padding: 10px;
 		min-width: 350px;
 		a {
@@ -588,7 +590,7 @@
 			}
 		}
 	}
-	.checkbox-list {
+	.list-area {
 		padding: 0;
     margin: 0 0 10px;
     li {
@@ -597,12 +599,16 @@
     		background: $gray-lightest;
     	}
     }
-    .price-text {
+    .select-text {
 	    padding: 5px;
 	    display: block;
 	    font-size: $font-size-large;
 	    color: $black;
     }
+	}
+	.overflow-area {
+		max-height: 230px;
+		overflow-y: scroll;
 	}
 	.button-area {
 		margin: 10px 0 0;
@@ -631,6 +637,9 @@
 .btn-dropdown {
 	border: 0;
 	transition: 0.3s all ease-out;
+	padding: 5px 10px;
+  margin: 10px 5px;
+  color: $gray-dark;
 	&:after {
 		content: "\69";
 		vertical-align: middle;
@@ -641,7 +650,7 @@
 .toggle-area {
 	display: flex;
 	float: right;
-  padding: 0px 5px;
+  padding: 5px 10px;
 	span {
 		justify-content: center;
     align-items: center;
@@ -656,6 +665,7 @@
 	.btn-dropdown {
 		background-color: $gray-lightest;
     color: $orange-light;
+
 	}
 	.dropdown-content {
 		display: block;
@@ -710,4 +720,19 @@
 }
 .bottom-place {
 	margin-top: 15px;
+}
+.circle-label {
+	display: inline-block;
+	font-size: $font-size-base;
+  line-height: 1.5;
+  margin-left: 3px;
+  // padding: 0px 2px;
+  color: $white;
+  border-radius: 50%;
+  // border: 1px solid $orange;
+  // box-sizing: border-box;
+  height: 20px;
+  min-width: 20px;
+  text-align: center;
+  background-color: $orange;
 }

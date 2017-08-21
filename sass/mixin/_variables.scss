@@ -37,8 +37,8 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 $font-weight:400 !default;
-$font-family-default: Arial,Tahoma,"Bitstream Vera Sans","Microsoft JhengHei",sans-serif !default;
-$font-family-pdname: Verdana,"Microsoft JhengHei",\5FAE\8EDF\6B63\9ED1\9AD4, \65B0\7D30\660E\9AD4,!default;
+$font-family-default: Helvetica,Arial,"PingFangTC-Regular","Microsoft JhengHei",sans-serif !default;
+$font-family-pdname: Verdana,"LiHei Pro","PingFangTC-Regular","Microsoft JhengHei",\5FAE\8EDF\6B63\9ED1\9AD4, \65B0\7D30\660E\9AD4,!default;
 $font-family-price: "Helvetica" !default;
 
 $font-size-base: 14px !default;
@@ -68,4 +68,21 @@ $btn-primary-bg:                 $orange-light !default;
 $btn-primary-border:             $orange !default;
 $btn-primary-hover-border:       darken($btn-primary-border, 10%) !default;
 
+$radio-checked-color: $orange;
+$radio-border-color: rgba(0, 0, 0, 0.54);
+$radio-size: 20px;
+$radio-checked-size: 10px; 
+$radio-ripple-size: 15px;
+
+@keyframes ripple {
+  0% {
+    box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.0);
+  }
+  50% { 
+    box-shadow: 0px 0px 0px $radio-ripple-size rgba(0, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0px 0px 0px $radio-ripple-size rgba(0, 0, 0, 0);
+  }
+}
 

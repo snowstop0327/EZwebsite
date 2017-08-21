@@ -159,64 +159,96 @@
       </ul>
 			<div class="sort-area clearfix">
 				<div class="dropdown-group clearfix">
-				  <button class="sort-btn btn-dropdown">相關度排序</button>
-				  <ul class="dropdown-content">
-				    <li class="dropdown-option current">相關度排序</li>
-				    <li><a href="#" class="dropdown-option">價格由低到高</a></li>
-				    <li><a href="#" class="dropdown-option">價格由高到低</a></li>
-				  </ul>
+				  <button class="sort-btn btn-dropdown">
+					  販售平台<span class="circle-label" aria-label="應用了1個篩選條件">1</span>
+				  </button>
+				  <div class="dropdown-content form-set">
+				  	<ul class="list-area overflow-area">
+							<li>
+								<label class="control control-checkbox">
+              		<span class="select-text">PChome商店街</span>
+              		<input type="checkbox">
+              		<span class="control-indicator"></span>
+            		</label>
+							</li>
+							<li>
+								<label class="control control-checkbox">
+              		<span class="select-text">Yahoo超級商城</span>
+              		<input type="checkbox">
+              		<span class="control-indicator"></span>
+            		</label>
+							</li>
+							<li>
+								<label class="control control-checkbox">
+              		<span class="select-text">myfone手機購物</span>
+              		<input type="checkbox">
+              		<span class="control-indicator"></span>
+            		</label>
+							</li>
+							<li>
+								<label class="control control-checkbox">
+              		<span class="select-text">PChome線上購物</span>
+              		<input type="checkbox">
+              		<span class="control-indicator"></span>
+            		</label>
+							</li>
+							<li>
+								<label class="control control-checkbox">
+              		<span class="select-text">friDay購物 x GoHappy</span>
+              		<input type="checkbox">
+              		<span class="control-indicator"></span>
+            		</label>
+							</li>
+							<li>
+								<label class="control control-checkbox">
+              		<span class="select-text">Yahoo!奇摩購物中心</span>
+              		<input type="checkbox">
+              		<span class="control-indicator"></span>
+            		</label>
+							</li>
+						</ul>
+						<div class="button-area clearfix">
+							<span>套用</span>
+							<span>取消</span>
+						</div>
+				  </div>
 				</div>
 				<div class="dropdown-group clearfix">
 					<button class="sort-btn btn-dropdown">價格範圍</button>
-					<div class="dropdown-content price-set">
-						<ul class="checkbox-list">
-							<li>
-								<label class="control control-checkbox">
-              		<span class="price-text">
-              			<span class="price-mark">0</span>-
-              			<span class="price-mark">5000</span>
-              		</span>
-              		<input type="checkbox">
-              		<span class="control-indicator"></span>
+					<div class="dropdown-content form-set">
+						<ul class="list-area">
+							<li class="radio">
+						    <input id="1" type="radio" name="price">
+						    <label for="1">
+						    	<span class="price-mark">0</span>-
+            			<span class="price-mark">5000</span>
+						    </label>
+						  </li>
+						  <li class="radio">
+						    <input id="2" type="radio" name="price">
+						    <label for="2">
+						    	<span class="price-mark">5001</span>-
+            			<span class="price-mark">15000</span>
+						    </label>
+						  </li>
+							<li class="radio">
+						    <input id="3" type="radio" name="price">
+						    <label for="3">
+            			<span class="price-mark">15001</span>-
+            			<span class="price-mark">20000</span>
             		</label>
 							</li>
-							<li>
-								<label class="control control-checkbox">
-              		<span class="price-text">
-              			<span class="price-mark">5001</span>-
-              			<span class="price-mark">15000</span>
-              		</span>
-              		<input type="checkbox">
-              		<span class="control-indicator"></span>
-            		</label>
-							</li>
-							<li>
-								<label class="control control-checkbox">
-              		<span class="price-text">
-              			<span class="price-mark">15001</span>-
-              			<span class="price-mark">20000</span>
-              		</span>
-              		<input type="checkbox">
-              		<span class="control-indicator"></span>
-            		</label>
-							</li>
-							<li>
-								<label class="control control-checkbox">
-              		<span class="price-text">
+							<li class="radio">
+						    <input id="4" type="radio" name="price">
+						    <label for="4">
               			<span class="price-mark">20001</span>-
               			<span class="price-mark">25000</span>
-              		</span>
-              		<input type="checkbox">
-              		<span class="control-indicator"></span>
             		</label>
 							</li>
-							<li>
-								<label class="control control-checkbox">
-              		<span class="price-text">
-              			<span class="price-mark">25001</span>以上
-              		</span>
-              		<input type="checkbox">
-              		<span class="control-indicator"></span>
+							<li class="radio">
+						    <input id="5" type="radio" name="price">
+						    <label for="5">
+            			<span class="price-mark">25001</span>以上
             		</label>
 							</li>
 						</ul>
@@ -238,8 +270,16 @@
 						</div>
 					</div>
 				</div>
+				<div class="dropdown-group clearfix">
+				  <button class="sort-btn btn-dropdown">相關度排序</button>
+				  <ul class="dropdown-content">
+				    <li class="dropdown-option current">相關度排序</li>
+				    <li><a href="#" class="dropdown-option">價格由低到高</a></li>
+				    <li><a href="#" class="dropdown-option">價格由高到低</a></li>
+				  </ul>
+				</div>
 				<div class="toggle-area">
-					<span>配件排除</span>
+					<span>精準搜尋</span>
 					<input type="checkbox" class="switch orange" />
 				</div>
 				<div class="toggle-area">
@@ -310,7 +350,8 @@
 				</a>
 			</div>
 			<div class="result-w">
-				<span class="icons-like"></span>符合<h2>iPhone比價結果的推薦商品</h2>
+				<!-- <span class="icons-like"></span> -->
+				符合<h2>iPhone比價結果的推薦商品</h2>
 			</div>
 			<div class="search-rst clearfix" itemscope itemtype="http://schema.org/Product">
 				<a href="product.html" title="Apple iPhone 6s plus 128G智慧型手機" class="pd-img">
@@ -706,7 +747,7 @@
 				</span>
 			</div>
 			<div class="result-w">
-				<span class="icons-cart"></span>前往符合<h2>iPhone比價結果的商店</h2>
+				<!-- <span class="icons-cart"></span> -->前往符合<h2>iPhone比價結果的商店</h2>
 			</div>
 			<div class="search-rst clearfix" itemscope itemtype="http://schema.org/Product">
 				<a href="#" title="iPhone 5 專用 Nano sim 多用途轉接卡(可轉成iPhone 及 其他手機 sim 卡)" class="pd-img">
@@ -1454,10 +1495,8 @@
 	});
 	$(function() {
 		$(".dropdown-group > .btn-dropdown").click(function(event) {
-			/* Act on the event */
-			// $(this).parent().find('.dropdown-content').slideToggle();
-			$(this).parent('.dropdown-group').siblings().removeClass('open')
-	    $(this).parent('.dropdown-group').toggleClass('open')
+			$(this).parent('.dropdown-group').siblings().removeClass('open');
+	    $(this).parent('.dropdown-group').toggleClass('open');
 		});
 	});
 

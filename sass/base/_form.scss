@@ -342,3 +342,57 @@ textarea.feeback-text{
 		}
 	}
 }
+
+//radio
+
+.radio {
+  margin: 5px 0;
+  
+  &.radio-inline {
+    display: inline-block;
+  }
+
+  input[type="radio"] {
+    display: none;
+    &:checked + label:before {
+      border-color: $radio-checked-color;
+      animation: ripple 0.2s linear forwards;   
+    }
+    &:checked + label:after {
+      transform: scale(1);
+    }
+  }
+  
+  label {
+    display: inline-block;
+    height:$radio-size;
+    font-size: $font-size-large;
+    position: relative;
+    padding: 0 ($radio-size + 10px);
+    margin-bottom: 0;
+    cursor: pointer;
+    vertical-align: bottom;
+    &:before, &:after {
+      position: absolute;            
+      content: '';  
+      border-radius: 50%;
+      transition: all .3s ease;
+      transition-property: transform, border-color;
+    }
+    &:before {
+      left: 0;
+      top: 0;
+      width: $radio-size;
+      height: $radio-size;
+      border: 2px solid $radio-border-color;
+    }
+    &:after {
+      top: $radio-size / 2 - $radio-checked-size / 2;
+      left: $radio-size / 2 - $radio-checked-size / 2;
+      width:$radio-checked-size;
+      height:$radio-checked-size;
+      transform: scale(0);
+      background:$radio-checked-color;
+    }
+  }
+}
