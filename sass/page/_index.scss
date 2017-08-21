@@ -34,7 +34,7 @@
 	    top: 100%;
 	    left: 0;
 	    width: 100%;
-		visibility: hidden;
+			visibility: hidden;
 	    opacity: 0;
 	    transform: translateY(-2em);
 	    @include transition(all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s);
@@ -72,39 +72,29 @@
 		}
 	}
 }
-.channel-list{
-	float: left;
-	margin: 2px 0 0 10px;
-	padding: 0;
-	li{
-		float: left;
-		a{
-			display: block;
-			padding: 10px 15px;
-			color: $gray;
-			font-size: $font-size-large;
-			&.spec{
-				color: $orange-light;
-			}
-		}
-	}
-}
 .index-hotkw{
 	margin: 0;
 	padding: 0;
 	max-height: 195px;
 	overflow: hidden;
+	padding: 5px;
+  text-align: justify;
 	>li{
-		float: left;
+		// float: left;
 		display: inline-block;
-		margin: 10px;
+    margin: 2px 0px;
 		a{
 			display: inline-block;
 			line-height: normal;
 			font-size: $font-size-small;
 			color: $gray-light;
+	    padding: 3px 8px;
+	    transition: 0.2s all ease-in-out;
+	    border-radius: 10px;
 			&:hover{
-				color: $orange-light;
+				background: $red;
+		    color: $white;
+		    text-decoration: none;
 			}
 		}
 	}
@@ -116,6 +106,9 @@
 	background-color: $white;
 	font-size: $font-size-xlarge;
 	color: $orange-light;
+	h1 {
+		display: inline;
+	}
 }
 .spec-area{
 	margin: 15px 0px;
@@ -188,19 +181,19 @@
 		}
 	}
 }
+.more-link{
+	position: absolute;
+	right: 13px;
+	top: 15px;
+	&:before{
+		float: right;
+		margin: 3px 0 0 0;
+  		font-weight: bold;
+	}
+}
 .atcl-area{
 	position: relative;
 	margin-top: 15px;
-	.more-link{
-		position: absolute;
-		right: 13px;
-		top: 15px;
-		&:before{
-			float: right;
-			margin: 3px 0 0 0;
-    		font-weight: bold;
-		}
-	}
 	.atcl-left{
 		position: relative;
 		float: left;
@@ -330,4 +323,69 @@ a.sev-area{
 	p{
 		margin: 5px 0 0 0;
 	}
+}
+a.block-area {
+	display: block;
+	img {
+		max-width: 100%;
+	}
+}
+.index-pd-card {
+	width: 19%;
+	float: left;
+	// border: 1px solid $gray-light;
+	box-sizing: border-box;
+	margin: calc(5% / 10);
+	.pd-link {
+    display: block;
+    padding: 10px;
+    color: inherit;
+    margin: 0 auto;
+    transition: 0.5s all ease-out;
+    outline: 1px solid $white;
+    &:hover {
+    	outline: 1px solid $orange;
+	    background: $gray-lightest;
+	    text-decoration: none;
+    }
+    img {
+	    max-width: 90%;
+	    margin: 0 auto;
+	    display: block;
+    }
+	}
+	.pd-name {
+		overflow: hidden;
+    height: 38px;
+    display: block;
+	}
+	ol {
+		padding: 0;
+    color: $gray;
+    margin-bottom: 0;
+    .shop-name {
+	    width: 60%;
+	    // overflow: hidden;
+	    // text-overflow: ellipsis;
+	    // white-space: nowrap;
+	    // display: block;
+	    float: left;
+	    line-height: 1.8;
+    }
+    .pd-price {
+    	float: right;
+	    color: $orange-light;
+	    text-align: right;
+	    &:before {
+  	    content: "$";
+		    font-size: 12px;
+	    }
+    }
+	}
+}
+.ellipsis {
+	overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
 }

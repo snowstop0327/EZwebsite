@@ -37,6 +37,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+@mixin after-icon {
+  font-family: "ez-website" !important;
+  font-style: normal !important;
+  font-weight: normal;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 .icon-arrow-down:before {
   content: "\69";
@@ -309,4 +320,9 @@
     background-position: 0 -319px;
     height: 16px;
     width: 17px;
+}
+
+.price-mark:before {
+  content:"$";
+  font-size: 70%;
 }

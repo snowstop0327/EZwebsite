@@ -37,7 +37,7 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 $font-weight:400 !default;
-$font-family-default: Verdana,"Microsoft JhengHei",\5FAE\8EDF\6B63\9ED1\9AD4, \65B0\7D30\660E\9AD4,Helvetica, Arial, sans-serif !default;
+$font-family-default: Arial,Tahoma,"Bitstream Vera Sans","Microsoft JhengHei",sans-serif !default;
 $font-family-pdname: Verdana,"Microsoft JhengHei",\5FAE\8EDF\6B63\9ED1\9AD4, \65B0\7D30\660E\9AD4,!default;
 $font-family-price: "Helvetica" !default;
 
@@ -67,6 +67,5 @@ $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $orange-light !default;
 $btn-primary-border:             $orange !default;
 $btn-primary-hover-border:       darken($btn-primary-border, 10%) !default;
-
 
 
