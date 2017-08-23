@@ -1744,6 +1744,9 @@ ul.tabs-area li .tab-keyword {
   margin: 0;
   font-weight: bold;
 }
+ul.tabs-area li .tab-keyword:hover {
+  color: inherit;
+}
 ul.tabs-area li .tab-pd {
   display: inline-block;
   margin: 0;
@@ -1761,6 +1764,10 @@ ul.tabs-area li .icon-recommend:before {
   margin: -13px 8px 0px 0;
   font-size: 30px;
   vertical-align: middle;
+}
+
+.keyword-tabs a, .tab-keyword {
+  color: inherit;
 }
 
 /* iOS 8 Pure CSS Switch -- */
@@ -3423,7 +3430,7 @@ footer .app-area .app-border {
 a.sev-area {
   display: inline-block;
   margin: 10px 0;
-  width: 8.68%;
+  width: 8.58%;
   text-align: center;
   color: #7f8492;
   text-decoration: none;
@@ -4182,6 +4189,58 @@ a.block-area img {
 }
 .cate-16:after {
   background-color: #8B572A;
+}
+
+.inline {
+  display: inline;
+}
+
+div.assistant {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  width: 100%;
+  height: 100%;
+}
+
+.assistant-head {
+  margin: 0;
+  padding: 10px;
+  border-bottom: 1px solid #e8e8e8;
+  background-color: #fff;
+  font-size: 1.2em;
+  color: #ff7f00;
+}
+
+.inline-flex {
+  display: -webkit-inline-box;
+}
+
+ul.assistant {
+  width: 180px;
+  line-height: 1.8em;
+}
+
+.assistant-th {
+  color: #7f8492;
+  font-size: 1.2em;
+}
+
+.ast-active {
+  display: block;
+}
+
+.ast-unactive {
+  display: none;
+}
+
+.ezpd-tag {
+  position: absolute;
+  background-color: #ff7f00;
+  padding: 0 5px;
+}
+
+.ezpd-tag a {
+  color: #fff;
 }
 
 .keyword-tabs, .cate-tabs {

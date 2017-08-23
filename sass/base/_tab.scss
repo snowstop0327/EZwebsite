@@ -23,6 +23,9 @@ ul.tabs-area{
 			display: inline-block;
 			margin: 0;
 			font-weight: bold;
+			&:hover {
+				color: inherit;
+			}
 		}
 		.tab-pd{
 			display: inline-block;
@@ -43,4 +46,7 @@ ul.tabs-area{
 			vertical-align: middle;
 		}
 	}
+}
+.keyword-tabs a, .tab-keyword {
+	color: inherit;
 }
