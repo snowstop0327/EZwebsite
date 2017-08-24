@@ -89,7 +89,7 @@
 			bottom: 0;
 			left: 0;
 		}
-		h3 {
+		h2 {
 			display: inline-block;
 			position: absolute;
 			font-size: 24px;
@@ -114,6 +114,9 @@
 	li {
     float: left;
     margin: 0px 5px 5px 0;
+    h3 {
+    	display: inline;
+    }
     a {
     	padding: 3px 4px;
 	    height: 21px;
