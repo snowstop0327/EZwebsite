@@ -3,7 +3,7 @@
 @import "compass/css3";
 @import "mixin/variables";
 
-//基本元件設定
+//base
 @import "base/grid.min";
 @import "base/reset";
 @import "base/icons";
@@ -14,14 +14,14 @@
 @import "base/tab";
 @import "base/switch";
 
-//共用模組
+//module
 @import "module/header";
 @import "module/breadcrumbs";
 @import "module/banner";
 @import "module/footer";
 
 
-//頁面單獨樣式
+//page
 @import "page/search";
 @import "page/index";
 @import "page/product";
@@ -31,7 +31,7 @@
 @import "page/404";
 @import "page/credit";
 
-//rwd調整
+//breakpoints
 @import "adjest/responsive";
 
 

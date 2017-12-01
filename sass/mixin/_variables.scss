@@ -86,3 +86,25 @@ $radio-ripple-size: 15px;
   }
 }
 
+@mixin item-flex-center {
+	align-items: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+
+@mixin icon-right {
+  &:before {
+    float: right;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: inherit;
+  }
+}
+
+@mixin ellipsis-1 {
+  white-space: nowrap;
+  text-overflow:ellipsis; 
+  overflow: hidden;
+}
+

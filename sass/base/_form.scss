@@ -342,6 +342,27 @@ textarea.feeback-text{
 		}
 	}
 }
+.loading-btn {
+	display: block;
+	background: $white;
+	border: 1px solid $orange-light;
+	border-radius: 2px;
+  min-width: 120px;
+  color: $orange-light;
+	padding: 10px 20px;
+	margin: 20px auto;
+	&:hover{
+    text-decoration: none;
+    background-color: $orange-light;
+    color: $white;
+  }
+  &:active,&:focus{
+    background-color: $orange;
+    border: 1px solid $orange;
+    color: $white;
+    box-shadow: rgba(0,0,0,0.1) 0px 1px 4px inset;
+  }
+}
 
 //radio
 

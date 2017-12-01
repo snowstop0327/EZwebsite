@@ -21,14 +21,17 @@
 }
 .error-word2{
 	margin-top: 35px;
-	font-size: $font-size-xlarge;
+	// font-size: $font-size-xlarge;
+	display: inline-block;
 	strong{
-		display: inline-block;
-		margin: -3px 0px;
+		// display: inline-block;
+		// margin: -3px 0px;
 		max-width: 362px;
-		max-height: 22px;
+		// max-height: 22px;
 		overflow: hidden;
 		color: $orange-light;
+		white-space: nowrap;
+		text-overflow: ellipsis;
 	}
 }
 .sug-word{
@@ -42,5 +45,13 @@
 			height: 12px;
 			background-color: $orange-light;
 		}
+	}
+}
+.body-color	{
+	color: $gray-darker;
+}
+.title-text {
+	strong {
+		color: $orange;
 	}
 }

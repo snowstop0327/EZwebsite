@@ -5,6 +5,7 @@
 	li{
 		display: inline-block;
 		float: left;
+  //   width: 33.33333%;
 		width: 25%;
 		height: 64px;
 		background-color: $white;
@@ -20,6 +21,9 @@
 			@include box-shadow(0 0 4px rgba(255,103,6,0.6));
 			@include scale(1,1.05);
 			color: $orange-light;
+      a {
+        color: $orange-light;
+      }
 		}
 		&:hover{
 			outline: 1px solid rgba(255,127,0,0.2);
@@ -27,6 +31,12 @@
 			@include box-shadow(0 0 4px rgba(255,103,6,0.6));
 			@include scale(1,1.05);
 		}
+    a {
+      color: inherit;
+      &:hover {
+        text-decoration: none;
+      }
+    }
 		h2{
 			margin: 0;
 			font-weight: bold;
@@ -135,6 +145,10 @@
 		h2{
 			line-height: normal;
 		}
+    a {
+      display: block;
+      color: $gray;
+    }
 	
 		.icon-new-2,.icon-laptop,.icon-ipad,.icon-desktop,.icon-display,.icon-ram,.icon-usb,.icon-hard-drive,.icon-cpu{
 			&:before{
@@ -171,5 +185,44 @@
 	}
 	.prev-btn{
 		left: 0;
+	}
+}
+.keyword-text {
+  cursor: pointer;
+}
+
+.keyword-list {
+  display: flex;
+	padding: 0;
+	// margin-left: -0.75rem;
+ //  margin-right: -0.75rem;
+  margin-top: calc(1.5rem - 0.75rem);
+  margin-bottom: calc(1.5rem - 0.75rem);
+  flex-wrap: wrap;
+	.col-1-5 {
+    width: 20%;
+    display: block;
+    padding: 0 0.75rem;
+		.keyword-text {
+			margin: 0;
+      cursor: unset;
+			a {
+				display: inline-block;
+				padding: 8px 16px;
+        // border: 1px solid $gray-light;
+        border-radius: 25px;
+        text-align: center;
+        color: $gray-darker;
+        transition: 0.1s all ease-out;
+        max-width: 100%;
+        overflow: hidden;
+        @include ellipsis-1;
+        &:hover {
+          color: $white;
+          background: #e53331;
+          text-decoration: none; 
+        }
+			}
+		}
 	}
 }

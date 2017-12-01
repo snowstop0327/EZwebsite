@@ -10,7 +10,7 @@
 		border: 1px solid $gray-lighter;
 		@include box-shadow(rgba(0,0,0,0.04) 0px 1px 4px);
 		height: auto;
-		overflow: auto;
+		overflow: visible; 
 	}
 	ul{
 		margin: 0;
@@ -27,10 +27,10 @@
     		overflow: hidden;
     		.title{
     			float: left;
-				display: inline-block;
-				line-height: 32px;
-				color: $gray-darker;
-				font-size: $font-size-small;
+					display: inline-block;
+					line-height: 32px;
+					color: $gray-darker;
+					font-size: $font-size-small;
     		}
 		}
 		>li.expanded{
@@ -49,13 +49,13 @@
 			font-size: $font-size-small;
 			border:none;
 			>a{
+				display: block;
 				padding: 3px 4px;
 				height: 21px;
 				font-family: $font-family-price;
 				color: $gray;
 				@include transition(all .2s ease-in-out);
 				span.cate{
-					display: inline-block;
 					margin: 0 3px 0 0;
 					color: $black;
 				}
@@ -68,6 +68,14 @@
 						color: $white;
 					}
 				}
+			}
+			.keyword-text {
+				height: auto;
+				color: $black;
+				line-height: 1.4;
+				border-radius: 999em;
+				max-width: 120px;
+				@include ellipsis-1; 
 			}
 		}
 		>li.current{
@@ -135,22 +143,31 @@
 }
 .keyword-area{
 	// margin: 10px 0;
+	position: relative;
 	margin: 0 0 15px 0;
 	padding: 0 0 0 10px;
 	height: 28px;
 	overflow: hidden;
 	font-size: $font-size-small;
 	background: $gray-lightest;
+	.title{
+		float: left;
+		margin: 7px 0 0 0;
+		border: none;
+		@include box-shadow(none);
+	}
+	.more {
+		position: absolute;
+		top: 0;
+		right: 0;
+		display: inline-block;
+    line-height: 28px;
+    @include icon-right;
+	}
 	>li{
 		float: left;
 		display: inline-block;
 		margin: 0 5px;
-		&.title{
-			float: left;
-			margin: 7px 0 0 0;
-			border: none;
-			@include box-shadow(none);
-		}
 		h5{
 			margin: 0;
 		}
@@ -268,6 +285,7 @@
 		left: 160px;
 		z-index: 2;
 		margin: 0;
+		padding-right: 30px;
 		width: 38%;
 		max-height: 45px;
 		overflow: hidden;
@@ -287,20 +305,22 @@
 	}
 	.platform-name{
 		position: absolute;
+		// bottom: 35px;
 		bottom: 30px;
 		left: 160px;
 		display: inline-block;
 		max-width: 125px;
-	    max-height: 19px;
-	    overflow: hidden;
-	    white-space: nowrap;
-	    text-overflow: ellipsis;
+    max-height: 19px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 		color: $gray;		
 	}
 	.spec-link{
 		position: absolute;
-	    bottom: 30px;
-	    left: 290px;
+		// bottom: 35px;
+    bottom: 30px;
+    left: 290px;
 		display: inline-block;
 		color: $orange-light;
 		z-index: 2;
@@ -331,8 +351,8 @@
 	}
 	.pd-detail{
 		position: absolute;
-	    top: 10px;
-	    right: 180px;
+    top: 10px;
+    right: 180px;
 		margin: 0;
 		padding: 28px 10px 30px 10px;
 		width: 20%;
@@ -397,18 +417,53 @@
 			}
 		}
 	}
-	.sales-tag{
+	.sponsor-box {
+		display: block;
 		position: absolute;
-		bottom: 5px;
-		left: 5px;
-		z-index: 2;
-		display: inline-block;
-		padding: 2px 4px;
-		background-color: $gray;
-		@include border-radius(2px);
-		color: $white;
-		font-size: $font-size-small;
+		// left: 160px;
+		top: 10px;
+		right: 10px;
+		// left: calc(38% + 136px);
+		color: $gray;
+		line-height: 24px;
+		max-height: 24px;
+		z-index: 3;
+		i {
+			position: relative;
+			display: inline-block;
+			font-size: 23px;
+			padding-left: 5px;
+			line-height: inherit;
+			vertical-align: middle;
+		}
+		.sponsor-text {
+			display: none;
+		}
+		&:hover {
+			background: $gray-lighter;
+			.sponsor-text {
+				display: block;
+				position: absolute;
+				top: 0;
+				left: -25px;
+				// right: -25px;
+		    padding: 0 5px;
+				background: $gray-lighter;
+			}
+		}
 	}
+	// .sales-tag{
+	// 	position: absolute;
+	// 	bottom: 5px;
+	// 	left: 5px;
+	// 	z-index: 2;
+	// 	display: inline-block;
+	// 	padding: 2px 4px;
+	// 	background-color: $gray;
+	// 	@include border-radius(2px);
+	// 	color: $white;
+	// 	font-size: $font-size-small;
+	// }
 	.arrow-left-tag{
 		position: absolute;
 		bottom: 62px;
@@ -448,10 +503,26 @@
 	border: 1px solid $gray-lighter;
 	color: $gray;
 	@include border-radius(2px);
-	&:before{
+	span:before{
 		font-size: 30px;
 		color: $orange-light;
 		vertical-align: middle;
+	}
+	span.tks-text {
+		display: none;
+		height: 24px;
+    line-height: 24px;
+    // display: inline-block;
+    &:before {
+    	font-size: 24px;
+    	vertical-align: sub;
+    	padding-right: 5px;
+    	// line-height: 24px;
+    	// height: 24px;
+    }
+    &.show {
+    	display: inline-block;
+    }
 	}
 }
 .like-area{
@@ -735,4 +806,76 @@
   min-width: 20px;
   text-align: center;
   background-color: $orange;
+}
+.top-area {
+	margin-top: 38px;
+	.content {
+		overflow: hidden;
+		max-height: (12px*$line-height-base+10px)*6+20px+20px;
+	}
+}
+.aside-area {
+	.area-head {
+		position: relative;
+	}
+	.more {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 10px;
+		display: inline-block;
+		line-height: inherit;
+		@include icon-right;
+	}
+	.keyword-text {
+		max-width: 190px;
+		@include ellipsis-1;
+	}
+}
+.keyword-area {
+	.keyword-box {
+		margin: 0 5px;
+		.keyword-text {
+			padding: 0px 7px;
+	    line-height: 28px;
+	    font-size: 12px;
+	    color: #1e2430;
+	    text-align: center;
+	    border-radius: 999em;
+	    transition: 0.1s all ease-out;
+	    max-width: 186px;
+	    @include ellipsis-1;
+	    &:hover {
+	    	background-color: #e53331;
+	    	color: $white;
+	    	text-decoration: none;
+	    }
+		}
+	}
+}
+.keyword-area.search-top-keyword {
+	height: 40px;
+	margin: 0;
+	padding: 7px 60px 10px 10px;
+	.title {
+		margin: 0;
+		line-height: 28px;
+	}
+	.title,.keyword-text,.more {
+		font-size: 14px;
+		color: $gray-dark;
+	}
+	> li:last-child {
+		float: none;
+		a {
+			color: $gray-dark;
+		}
+	}
+	.more {
+		line-height: 40px;
+		height: auto;
+		&:before {
+			margin: 0;
+		}
+	}
 }

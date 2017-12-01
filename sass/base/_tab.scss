@@ -14,18 +14,21 @@ ul.tabs-area{
 		}
 		&.active{
 			border-bottom: 3px solid $orange-light;
-			color: $orange-light;
+			a {
+				color: $orange-light;
+			}
 		}
-		&:hover{
-			color: $orange-light;
+		a {
+			color: $gray-light;
+			&:hover {
+				color: $orange-light;
+			}
 		}
 		.tab-keyword{
 			display: inline-block;
 			margin: 0;
 			font-weight: bold;
-			&:hover {
-				color: inherit;
-			}
+			// color: $gray-light;
 		}
 		.tab-pd{
 			display: inline-block;
@@ -45,8 +48,8 @@ ul.tabs-area{
 			font-size: 30px;
 			vertical-align: middle;
 		}
+		span.icon {
+			color: $gray-light; 
+		}
 	}
-}
-.keyword-tabs a, .tab-keyword {
-	color: inherit;
 }
