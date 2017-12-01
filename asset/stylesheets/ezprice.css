@@ -897,7 +897,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .icons-atm, .icons-card, .icons-cart, .icons-delete-btn, .icons-ez-app, .icons-ez-plugin, .icons-familymart, .icons-gift, .icons-like, .icons-logo, .icons-open-gift, .icons-seven {
   display: inline-block;
-  background: url("asset/images/icons-sprite.png") no-repeat;
+  background: url("../images/icons-sprite.png") no-repeat;
   -moz-background-size: 180px auto;
   -o-background-size: 180px auto;
   -webkit-background-size: 180px auto;
@@ -2434,7 +2434,7 @@ footer .app-area .app-border {
   position: absolute;
   top: 0;
   right: -8px;
-  background: url("asset/images/icons-sprite.png") no-repeat;
+  background: url("../images/icons-sprite.png") no-repeat;
   -moz-background-size: 180px auto;
   -o-background-size: 180px auto;
   -webkit-background-size: 180px auto;
@@ -5053,7 +5053,7 @@ ul.assistant {
 .error-area {
   max-height: 235px;
   overflow: hidden;
-  background: url("asset/images/error-bg.png") #f5f5f5;
+  background: url("../images/error-bg.png") #f5f5f5;
   background-size: 100%;
   border-radius: 2px;
   font-size: 16px;
