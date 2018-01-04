@@ -16,8 +16,20 @@
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
   	<link href="https://i.imgur.com/QTttrxa.png" rel="icon" type="image/png">
-  	<link rel="stylesheet" href="stylesheets/ezprice.css">
-  	<link rel="alternate" media="only screen and (max-width: 1023px)" href="https://m.ezprice.com.tw/">
+  	<link rel="stylesheet" href="/asset/stylesheets/ezprice.css">
+	<link rel="alternate" media="only screen and (max-width: 1023px)" href="https://m.ezprice.com.tw/">
+	<style>
+		@font-face {
+			font-family: "ez-website";
+			src: url("/asset/stylesheets/fonts/ez-website.eot?v=7");
+			src: url("/asset/stylesheets/fonts/ez-website.eot?v=7#iefix") format("embedded-opentype"),
+			url("/asset/stylesheets/fonts/ez-website.woff?v=7") format("woff"),
+			url("/asset/stylesheets/fonts/ez-website.ttf?v=7") format("truetype"),
+			url("/asset/stylesheets/fonts/ez-website.svg?v=7#ez-website") format("svg");
+			font-weight: normal;
+			font-style: normal;
+		}
+	</style>
 	<script type="application/ld+json">
 	{
 	  "@context": "http://schema.org",
@@ -37,7 +49,7 @@
 	</script>
 </head>
 <body class="index-bg">
-	<header class="navbar">
+	<header class="navbar navbar-fix-top">
 		<div class="container">
 			<div class="site-logo icons-logo">
 				<a href="#" class="site-name text-hide">EZprice比價網</a>
@@ -52,37 +64,37 @@
 					</select>
 					<input class="navbar-input" placeholder="輸入您想比價的商品或型號" itemprop="query-input" type="text" name="search_term_string" required/>
 					<ul class="dropdown-menu">
-		                <li>
-		                    <a href="#" class="suggest-word">iPhone6s</a>
-		                </li>
-		                <li>
-		                    <a href="#" class="suggest-word">iPhone7</a>
-		                </li>
-		                <li>
-		                    <a href="#" class="suggest-word">iPhone7 plus</a>
-		                </li>
-		                <li>
-		                    <a href="#" class="suggest-word">iPhone5s</a>
-		                </li>
-		                <li>
-		                    <a href="#" class="suggest-word">iPhone64G</a>
-		                </li>
-		                <li>
-		                    <a href="#" class="suggest-word">iPhone128G</a>
-		                </li>
-		                <li>
-		                    <a href="#" class="suggest-word">iPhone6s plus</a>
-		                </li>
-		                <li>
-		                    <a href="#" class="suggest-word">iPhone SE</a>
-		                </li>
-		                <li>
-		                    <a href="#" class="suggest-word">iPhone32G</a>
-		                </li>
-		                <li>
-		                    <a href="#" class="suggest-word">iPhone256G</a>
-		                </li>
-		            </ul>
+            <li>
+                <a href="#" class="suggest-word">iPhone6s</a>
+            </li>
+            <li>
+                <a href="#" class="suggest-word">iPhone7</a>
+            </li>
+            <li>
+                <a href="#" class="suggest-word">iPhone7 plus</a>
+            </li>
+            <li>
+                <a href="#" class="suggest-word">iPhone5s</a>
+            </li>
+            <li>
+                <a href="#" class="suggest-word">iPhone64G</a>
+            </li>
+            <li>
+                <a href="#" class="suggest-word">iPhone128G</a>
+            </li>
+            <li>
+                <a href="#" class="suggest-word">iPhone6s plus</a>
+            </li>
+            <li>
+                <a href="#" class="suggest-word">iPhone SE</a>
+            </li>
+            <li>
+                <a href="#" class="suggest-word">iPhone32G</a>
+            </li>
+            <li>
+                <a href="#" class="suggest-word">iPhone256G</a>
+            </li>
+          </ul>
 					<button class="btn navbar-btn" type="submit" data-icon="c">
 					</button>
 				</form>
@@ -98,8 +110,8 @@
 			<ul class="user-func clearfix">
 				<li class="user-menu user-login">
 					<a href="#">
-						<span class="user-img"><img src="https://i.imgur.com/hYCDnKI.jpg" alt="user-img"></span>
-						<span class="user-menu-text">Jennifer Chen</span>
+						<span class="user-img"><img src="https://lh3.googleusercontent.com/-gVSAP5QTiwM/AAAAAAAAAAI/AAAAAAAAAns/e3FGKAkAjzg/s60-p-rw-no/photo.jpg" alt="user-img"></span>
+						<span class="user-menu-text">Administrator</span>
 					</a>
 					<ul class="user-menu-dropdown">
 						<li>
@@ -110,9 +122,8 @@
 			</ul>
 
 		</div>
-		<hr>
 		<div class="container">
-			<ul class="cate-list">
+			<!-- <ul class="cate-list">
 				<li class="sub-menu-parent">
 					<h1 class="all-cate-title">
 						<a href="#" data-icon="m">EZprice比價分類</a>
@@ -136,82 +147,98 @@
 						<li><a href="#" data-icon="B">書籍</a></li>
 					</ul>
 				</li>		
-			</ul>
-			<ul class="channel-list">
-				<li><a href="#">熱門購物話題</a></li>
-				<li><a href="#" class="spec">下載電腦比價神器</a></li>
-			</ul>
+			</ul> -->
+			<ul class="channel-list clearfix" itemscope="" itemtype="http://www.schema.org/SiteNavigationElement">
+	      <li itemprop="name"><a itemprop="url" href="/cate1-3C電腦週邊/" gdc="index" gda="nav-cate" gdl="1">3C電腦週邊</a></li>
+	      <li itemprop="name"><a itemprop="url" href="/cate2-視聽家電/" gdc="index" gda="nav-cate" gdl="2">視聽家電</a></li>
+	      <li itemprop="name"><a itemprop="url" href="/cate3-3C手機相機/" gdc="index" gda="nav-cate" gdl="3">3C手機相機</a></li>
+	      <li itemprop="name"><a itemprop="url" href="/cate4-汽車機車/" gdc="index" gda="nav-cate" gdl="4">汽車機車</a></li>
+	      <!-- <li itemprop="name"><a itemprop="url" href="/cate5-精品珠寶/" gdc="index" gda="nav-cate" gdl="5">精品珠寶</a></li> -->
+	      <li itemprop="name"><a itemprop="url" href="/cate6-美妝保養/" gdc="index" gda="nav-cate" gdl="6">美妝保養</a></li>
+	      <!-- <li itemprop="name"><a itemprop="url" href="/cate8-傢具寢具/" gdc="index" gda="nav-cate" gdl="8">傢具寢具</a></li> -->
+	      <li itemprop="name"><a itemprop="url" href="/cate9-生活用品/" gdc="index" gda="nav-cate" gdl="9">生活用品</a></li>
+	      <!-- <li itemprop="name"><a itemprop="url" href="/cate10-養生保健/" gdc="index" gda="nav-cate" gdl="10">養生保健</a></li> -->
+	      <!-- <li itemprop="name"><a itemprop="url" href="/cate11-婦幼玩具/" gdc="index" gda="nav-cate" gdl="11">婦幼玩具</a></li> -->
+      </ul>
 		</div>
 	</header>
-	<div class="container">	
+	<div class="container content">	
 		<section class="col-md-12">
-			<div class="block-area spec-area">
-				<h2 class="index-title">熱門關鍵字</h2>
-				<ul class="index-hotkw clearfix">
-					<li><a href="#">清淨機</a></li>
-					<li><a href="#">掃地機器人</a></li>
-					<li><a href="#">小米盒子</a></li>
-					<li><a href="#">保溫瓶</a></li>
-					<li><a href="#">OPPO R9s</a></li>
-					<li><a href="#">登山健行鞋</a></li>
-					<li><a href="#">iPhone 7</a></li>
-					<li><a href="#">LG掃地機器人</a></li>
-					<li><a href="#">清淨機</a></li>
-					<li><a href="#">掃地機器人</a></li>
-					<li><a href="#">小米盒子</a></li>
-					<li><a href="#">保溫瓶</a></li>
-					<li><a href="#">OPPO R9s</a></li>
-					<li><a href="#">華碩筆電</a></li>
-					<li><a href="#">極限立方刷毛圓領T-男</a></li>
-					<li><a href="#">帥中黃</a></li>
-					<li><a href="#">復古煤油燈</a></li>
-					<li><a href="#">OPPO R9s</a></li>
-					<li><a href="#">登山健行鞋</a></li>
-					<li><a href="#">iPhone 7</a></li>
-					<li><a href="#">LG掃地機器人</a></li>
-					<li><a href="#">清淨機</a></li>
-					<li><a href="#">掃地機器人</a></li>
-					<li><a href="#">小米盒子</a></li>
-					<li><a href="#">保溫瓶</a></li>
-					<li><a href="#">OPPO R9s</a></li>
-					<li><a href="#">極限立方刷毛圓領T-男</a></li>
-					<li><a href="#">帥中黃</a></li>
-					<li><a href="#">復古煤油燈</a></li>
-					<li><a href="#">OPPO R9s</a></li>
-					<li><a href="#">登山健行鞋</a></li>
-					<li><a href="#">iPhone 7</a></li>
-					<li><a href="#">LG掃地機器人</a></li>
-					<li><a href="#">清淨機</a></li>
-					<li><a href="#">掃地機器人</a></li>
-					<li><a href="#">小米盒子</a></li>
-					<li><a href="#">保溫瓶</a></li>
-					<li><a href="#">OPPO R9s</a></li>
-					<li><a href="#">帥中黃</a></li>
-					<li><a href="#">復古煤油燈</a></li>
-					<li><a href="#">清淨機</a></li>
-					<li><a href="#">掃地機器人</a></li>
-					<li><a href="#">小米盒子</a></li>
-					<li><a href="#">保溫瓶</a></li>
-					<li><a href="#">OPPO R9s</a></li>
-					<li><a href="#">登山健行鞋</a></li>
-					<li><a href="#">iPhone 7</a></li>
-					<li><a href="#">LG掃地機器人</a></li>
-					<li><a href="#">清淨機</a></li>
-					<li><a href="#">掃地機器人</a></li>
-					<li><a href="#">登山健行鞋</a></li>
-					<li><a href="#">iPhone 7</a></li>
-					<li><a href="#">LG掃地機器人</a></li>
-					<li><a href="#">清淨機</a></li>
-					<li><a href="#">掃地機器人</a></li>
-					<li><a href="#">登山健行鞋</a></li>
-					<li><a href="#">iPhone 7</a></li>
-					<li><a href="#">LG掃地機器人</a></li>
-					<li><a href="#">清淨機</a></li>
-					<li><a href="#">掃地機器人</a></li>
-					<li><a href="#">掃地機器人</a></li>
-				</ul>
+			<div class="block-area atcl-area spec-area clearfix" id="keyword-tab">
+				<div class="index-title">
+					<h1>EZprice比價網</h1>
+					<span> - 熱門搜尋</span>
+				</div>
+				<a href="#" data-icon="k" class="more-link">更多比價</a>
+				<div class="img-slider-area">
+					<ul class="flex-area">
+						<li class="spec-pd" id="first-tab">
+							<a href="/s/%E6%8C%89%E6%91%A9%20%E9%AB%98%E5%B3%B6/price/" class="pd-img" target="_blank">
+								<img src="https://img.ezprice.com.tw/is/img.udn.com/image/product/S0000049/APPROVED/U009683419/20161117153404116_300.jpg"
+								 alt="【TAKASIMA高島】創世紀4D按摩椅(4D按摩椅)共兩色">
+							</a>
+							<a class="pd-name" href="/s/%E6%8C%89%E6%91%A9%20%E9%AB%98%E5%B3%B6/price/" target="_blank">【TAKASIMA高島】創世紀4D按摩椅(4D按摩椅)共兩色</a>
+							<span class="pd-price">
+								$188,000
+							</span>
+						</li>
+						<li class="spec-pd">
+							<a href="/s/%E7%95%99%E8%A8%80%20%E9%9B%BB%E8%85%A6%E8%9E%A2%E5%B9%95%E5%81%B4%E9%82%8A/price/" class="pd-img" target="_blank">
+								<img src="https://s.yimg.com/ut/api/res/1.2/21MhCbgEqbLzGuafWzSIMQ--~A/YXBwaWQ9eXR3bWFsbDtoPTEzNTtxPTc4O3c9MTM1/http://imgcld.zenfs.com:80/ps_image_prod/item/p0562129995947-item-4235xf3x0600x0600-m.jpg"
+								 alt="文具 電腦螢幕側邊留言板 便利貼版  電腦螢幕貼 【PMG182】收納女王">
+							</a>
+							<a class="pd-name" href="/s/%E7%95%99%E8%A8%80%20%E9%9B%BB%E8%85%A6%E8%9E%A2%E5%B9%95%E5%81%B4%E9%82%8A/price/" target="_blank">文具 電腦螢幕側邊留言板 便利貼版 電腦螢幕貼 【PMG182】收納女王</a>
+							<span class="pd-price">
+								$148
+							</span>
+						</li>
+						<li class="spec-pd">
+							<a href="/s/%E8%97%8D%E5%AF%B6%E7%9F%B3%20%E7%91%9E%E5%A3%AB%E5%9C%8B%E9%90%B5/price/" class="pd-img" target="_blank">
+								<img src="https://img.ezprice.com.tw/is/img.udn.com/image/product/S0004162/APPROVED/U009215285/20160530162554068_300.jpg"
+								 alt="MONDAINE 瑞士國鐵藍寶石水晶薄型腕錶/41mm (672011)">
+							</a>
+							<a class="pd-name" href="/s/%E8%97%8D%E5%AF%B6%E7%9F%B3%20%E7%91%9E%E5%A3%AB%E5%9C%8B%E9%90%B5/price/" target="_blank">MONDAINE 瑞士國鐵藍寶石水晶薄型腕錶/41mm (672011)</a>
+							<span class="pd-price">
+								$10,000
+							</span>
+						</li>
+						<li class="spec-pd">
+							<a href="/s/%E5%8F%AF%E6%84%9B%20%E8%98%BF%E8%8E%89/price/" class="pd-img" target="_blank">
+								<img src="https://s.yimg.com/ut/api/res/1.2/Rg5kmdzs8zN4oYbDLApauA--~A/YXBwaWQ9eXR3bWFsbDtoPTEzNTtxPTc4O3c9MTM1/http://imgcld.zenfs.com:80/ps_image_prod/item/p0091139891856-item-7514xf3x0750x0750-m.jpg"
+								 alt="學院風少女蘿莉高腰顯瘦背帶裙軟妹可愛學生洋裝夏裙子">
+							</a>
+							<a class="pd-name" href="/s/%E5%8F%AF%E6%84%9B%20%E8%98%BF%E8%8E%89/price/" target="_blank">學院風少女蘿莉高腰顯瘦背帶裙軟妹可愛學生洋裝夏裙子</a>
+							<span class="pd-price">
+								$869
+							</span>
+						</li>
+						<li class="spec-pd">
+							<a href="/s/%E4%BF%9D%E6%BF%95%20%E5%AB%A9%E7%99%BD/price/" class="pd-img" target="_blank">
+								<img src="https://img.ezprice.com.tw/is/img.udn.com/image/product/S0000673/APPROVED/U000082625/20170807120338639_300.jpg"
+								 alt="黎得芳嫩白撫紋保溼護手霜 65ml">
+							</a>
+							<a class="pd-name" href="/s/%E4%BF%9D%E6%BF%95%20%E5%AB%A9%E7%99%BD/price/" target="_blank">黎得芳嫩白撫紋保溼護手霜 65ml</a>
+							<span class="pd-price">
+								$150
+							</span>
+						</li>
+						<li class="spec-pd">
+							<a href="/s/%E7%B5%A8%E8%B3%AA%20%E6%B7%B1%E7%B4%AB%E8%89%B2%E5%9C%93%E9%A0%98/price/" class="pd-img" target="_blank">
+								<img src="https://img.ezprice.com.tw/is/www.rt-mart.com.tw/website/uploads_product/website_2/P0000200167180_1_304259.jpg"
+								 alt="FP絨質粉撲(中)">
+							</a>
+							<a class="pd-name" href="/s/%E7%B5%A8%E8%B3%AA%20%E6%B7%B1%E7%B4%AB%E8%89%B2%E5%9C%93%E9%A0%98/price/" target="_blank">FP絨質粉撲(中)</a>
+							<span class="pd-price">
+								$39
+							</span>
+						</li>
+					</ul>
+				</div>
+				<a class="next-btn" id="next-btn"><span class="icon icon-arrow-right"></span></a>
+				<a class="prev-btn" id="prev-btn"><span class="icon icon-arrow-left"></span>
+				</a>
 			</div>
-			<div class="block-area spec-area">
+			<!-- <div class="block-area spec-area">
 				<h2 class="index-title">購物比價王</h2>
 				<a href="#" class="sev-area">
 					<span class="icon icon-scooter"></span>
@@ -257,7 +284,7 @@
 					<span class="icon icon-dehumid"></span>
 					<p>除濕機</p>
 				</a>
-			</div>
+			</div> -->
 			<!-- <div class="block-area spec-area clearfix">
 				<h2 class="index-title">今日價格精選</h2>
 				<div class="spec-pd">
@@ -319,9 +346,309 @@
 				</div>
 			</div> -->
 			<div class="index-banner show">
-				<iframe src="https://rd.ezprice.com.tw/?type=i1110x150&amp;token=ee1c185f8671b8435e157dcb42b2a493&amp;q=" style="border: 0px;" class="DRAGDIS_iframe" allowfullscreen></iframe>
+				<iframe src="https://rd.ezprice.com.tw/?type=i1110x150&amp;token=ee1c185f8671b8435e157dcb42b2a493&amp;q=" style="border: 0px;" class="DRAGDIS_iframe" allowfullscreen>
+				</iframe>
 			</div>
-			<div class="block-area atcl-area clearfix">
+			<div class="block-area atcl-area spec-area clearfix">
+				<h2 class="index-title">熱門新進商品</h2>
+				<a href="#" data-icon="k" class="more-link">全部商品</a>
+				<div class="index-pd-card" itemscope itemtype="http://schema.org/Product">
+					<a href="#" itemprop="url" class="pd-link" target="_blank">
+						<span class="img-box"><img src="https://img.ezprice.com.tw/ezpd/298/50298/50298_m.jpg" itemprop="image" alt="瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升"></span>
+						<span class="pd-name" itemprop="name">瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升</span>
+						<ol>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">ASAP省錢購物網</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">PChome線上購物</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">e-Payless百利市購物中心</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+						</ol>
+					</a>
+				</div>
+				<div class="index-pd-card" itemscope itemtype="http://schema.org/Product">
+					<a href="#" itemprop="url" class="pd-link" target="_blank">
+						<span class="img-box"><img src="https://img.ezprice.com.tw/ezpd/298/50298/50298_m.jpg" itemprop="image" alt="瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升"></span>
+						<span class="pd-name" itemprop="name">瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升</span>
+						<ol>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">ASAP省錢購物網</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">PChome線上購物</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">e-Payless百利市購物中心</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+						</ol>
+					</a>
+				</div>
+				<div class="index-pd-card" itemscope itemtype="http://schema.org/Product">
+					<a href="#" itemprop="url" class="pd-link" target="_blank">
+						<span class="img-box"><img src="https://img.ezprice.com.tw/ezpd/298/50298/50298_m.jpg" itemprop="image" alt="瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升"></span>
+						<span class="pd-name" itemprop="name">瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升</span>
+						<ol>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">ASAP省錢購物網</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">PChome線上購物</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">e-Payless百利市購物中心</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+						</ol>
+					</a>
+				</div>
+				<div class="index-pd-card" itemscope itemtype="http://schema.org/Product">
+					<a href="#" itemprop="url" class="pd-link" target="_blank">
+						<span class="img-box"><img src="https://img.ezprice.com.tw/ezpd/298/50298/50298_m.jpg" itemprop="image" alt="瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升"></span>
+						<span class="pd-name" itemprop="name">瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升</span>
+						<ol>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">ASAP省錢購物網</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">PChome線上購物</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">e-Payless百利市購物中心</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+						</ol>
+					</a>
+				</div>
+				<div class="index-pd-card" itemscope itemtype="http://schema.org/Product">
+					<a href="#" itemprop="url" class="pd-link" target="_blank">
+						<span class="img-box"><img src="https://img.ezprice.com.tw/ezpd/298/50298/50298_m.jpg" itemprop="image" alt="瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升"></span>
+						<span class="pd-name" itemprop="name">瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升</span>
+						<ol>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">ASAP省錢購物網</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">PChome線上購物</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">e-Payless百利市購物中心</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+						</ol>
+					</a>
+				</div>
+				<div class="index-pd-card" itemscope itemtype="http://schema.org/Product">
+					<a href="#" itemprop="url" class="pd-link" target="_blank">
+						<span class="img-box"><img src="https://www.books.com.tw/img/001/064/73/0010647358.jpg" itemprop="image" alt="瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升"></span>
+						<span class="pd-name" itemprop="name">瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升</span>
+						<ol>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">ASAP省錢購物網</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">PChome線上購物</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">e-Payless百利市購物中心</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+						</ol>
+					</a>
+				</div>
+				<div class="index-pd-card" itemscope itemtype="http://schema.org/Product">
+					<a href="#" itemprop="url" class="pd-link" target="_blank">
+						<span class="img-box"><img src="https://img.ezprice.com.tw/ezpd/298/50298/50298_m.jpg" itemprop="image" alt="瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升"></span>
+						<span class="pd-name" itemprop="name">瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升</span>
+						<ol>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">ASAP省錢購物網</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">PChome線上購物</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">e-Payless百利市購物中心</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+						</ol>
+					</a>
+				</div>
+				<div class="index-pd-card" itemscope itemtype="http://schema.org/Product">
+					<a href="#" itemprop="url" class="pd-link" target="_blank">
+						<span class="img-box"><img src="https://img.ezprice.com.tw/ezpd/298/50298/50298_m.jpg" itemprop="image" alt="瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升"></span>
+						<span class="pd-name" itemprop="name">瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升</span>
+						<ol>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">ASAP省錢購物網</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">PChome線上購物</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">e-Payless百利市購物中心</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+						</ol>
+					</a>
+				</div>
+				<div class="index-pd-card" itemscope itemtype="http://schema.org/Product">
+					<a href="#" itemprop="url" class="pd-link" target="_blank">
+						<span class="img-box"><img src="https://img.ezprice.com.tw/ezpd/298/50298/50298_m.jpg" itemprop="image" alt="瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升"></span>
+						<span class="pd-name" itemprop="name">瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升</span>
+						<ol>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">ASAP省錢購物網</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">PChome線上購物</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+							<li itemprop="offers" itemscope itemtype="http://schema.org/Offer" class="clearfix">
+								<meta itemprop="priceCurrency" content="TWD">
+								<span class="ellipsis shop-name" itemprop="seller">e-Payless百利市購物中心</span>
+								<span class="pd-price" itemprop="price" content="7500">7,500</span>
+							</li>
+						</ol>
+					</a>
+				</div>
+				<div class="index-pd-card" itemscope="" itemtype="http://schema.org/Product">
+	    		<a href="/ezpd_compare/282/34220-%E3%80%90Burberry%E3%80%91%20BODY%20%E8%A3%B8%E7%B4%97%E5%A5%B3%E6%80%A7%E6%B7%A1%E9%A6%99%E7%B2%BE%2085ml.htm" itemprop="url" class="pd-link" target="_blank">
+	    			<span class="img-box"><img itemprop="image" src="https://img.ezprice.com.tw/ezpd/220/34220/34220_m.jpg" alt="【Burberry】 BODY 裸紗女性淡香精 85ml"></span>
+	    			<span class="pd-name" itemprop="name">【Burberry】 BODY 裸紗女性淡香精 85ml</span>
+	    			<ol>
+	    			        				<li itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="clearfix">
+	    					<meta itemprop="priceCurrency" content="TWD">
+	    					<span class="ellipsis shop-name" itemprop="seller">香水網•Yahoo超級商城</span>
+	    					<span class="pd-price" itemprop="price" content="7500">800</span>
+	    				</li>
+	    				    				<li itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="clearfix">
+	    					<meta itemprop="priceCurrency" content="TWD">
+	    					<span class="ellipsis shop-name" itemprop="seller">PChome商店街</span>
+	    					<span class="pd-price" itemprop="price" content="7500">950</span>
+	    				</li>
+	    				    				<li itemprop="offers" itemscope="" itemtype="http://schema.org/Offer" class="clearfix">
+	    					<meta itemprop="priceCurrency" content="TWD">
+	    					<span class="ellipsis shop-name" itemprop="seller">森森購物網</span>
+	    					<span class="pd-price" itemprop="price" content="7500">968</span>
+	    				</li>
+	    				
+	    			</ol>
+	    		</a>
+	    	</div>
+				<!-- <div class="spec-pd">
+					<a href="#" class="pd-img" target="_blank">
+						<img src="https://img.ezprice.com.tw/ezpd/970/62970/62970_m.jpg" alt="【KRIA可利亞】涮烤兩用圍爐鍋/電火鍋/料理鍋/調理鍋(KR-840)">
+					</a>
+					<a class="pd-name" href="#" target="_blank">【KRIA可利亞】涮烤兩用圍爐鍋/電火鍋/料理鍋/調理鍋(KR-840)</a>
+						<span class="pd-price">$22,705</span>
+				</div>
+				<div class="spec-pd">
+					<a href="#" class="pd-img" target="_blank">
+						<img src="https://img.ezprice.com.tw/ezpd/959/17959/17959_m.jpg" alt="LIFECODE豪華版高承重鋁合金行軍床-寬78cm">
+					</a>
+					<a class="pd-name" href="#" target="_blank">LIFECODE豪華版高承重鋁合金行軍床-寬78cm</a>
+						<span class="pd-price">$22,705</span>
+				</div>
+				<div class="spec-pd">
+					<a href="#" class="pd-img" target="_blank">
+						<img src="https://img.ezprice.com.tw/ezpd/956/2956/2956_m.jpg" alt="D-LINK DWA-182 Wireless AC1200雙頻USB 無線網卡">
+					</a>
+					<a class="pd-name" href="#" target="_blank">D-LINK DWA-182 Wireless AC1200雙頻USB 無線網卡</a>
+						<span class="pd-price">$22,705</span>
+				</div>
+				<div class="spec-pd">
+					<a href="#" class="pd-img" target="_blank">
+						<img src="https://img.ezprice.com.tw/ezpd/220/38220/38220_m.jpg" alt="Kamera  多層防護攝影包(817)">
+					</a>
+					<a class="pd-name" href="#" target="_blank">瑞典 Dometic 吸收式製冷小冰箱 HiPro 4000 / 40公升</a>
+						<span class="pd-price">$22,705</span>
+				</div>
+				<div class="spec-pd">
+					<a href="#" class="pd-img" target="_blank">
+						<img src="https://img.ezprice.com.tw/is/image1.myfone.com.tw/website_twmf/uploads_product/website_5/018/562/ECP0000501856270_3_8026125_U_8027029.jpg" alt="iPhone 7 32G(黑)【拆封福利品B級】(福利品)">
+					</a>
+					<a class="pd-name" href="#" target="_blank">iPhone 7 32G(黑)【拆封福利品B級】(福利品)</a>
+						<span class="pd-price">$22,705</span>
+				</div>
+				<div class="spec-pd">
+					<a href="#" class="pd-img" target="_blank">
+						<img src="https://image1.myfone.com.tw/website_twmf/uploads_product/website_5/018/562/ECP0000501856283_3_8003093_U_8022651.jpg" alt="iPhone 7 32G(玫瑰金)【拆封新品】">
+					</a>
+					<a class="pd-name" href="#" target="_blank">iPhone 7 32G(玫瑰金)【拆封新品】</a>
+						<span class="pd-price">$22,705</span>
+				</div>
+				<div class="spec-pd">
+					<a href="#" class="pd-img" target="_blank">
+						<img src="https://img.ezprice.com.tw/ezpd/221/21221/21221_m.jpg" alt="FujiXerox富士全錄 DocuPrintA4黑白雷射印表機 P115b">
+					</a>
+					<a class="pd-name" href="#" target="_blank">FujiXerox富士全錄 DocuPrintA4黑白雷射印表機 P115b</a>
+						<span class="pd-price">$22,705</span>
+				</div>
+				<div class="spec-pd">
+					<a href="#" class="pd-img" target="_blank">
+						<img src="https://img.ezprice.com.tw/ezpd/559/57559/57559_m.jpg" alt="【Radius】HP-NHR21高階重低音入耳式耳機">
+					</a>
+					<a class="pd-name" href="#" target="_blank">【Radius】HP-NHR21高階重低音入耳式耳機</a>
+						<span class="pd-price">$22,705</span>
+				</div>
+				<div class="spec-pd">
+					<a href="#" class="pd-img" target="_blank">
+						<img src="https://img.ezprice.com.tw/ezpd/336/12336/12336_m.jpg" alt="亞培小安素強護三重營養支持即飲配方">
+					</a>
+					<a class="pd-name" href="#" target="_blank">亞培小安素強護三重營養支持即飲配方</a>
+						<span class="pd-price">$22,705</span>
+				</div> -->
+			</div>
+			<!-- <a href="#" class="block-area"><img src="asset/images/help-banner.png" alt="比價小幫手"></a> -->
+			<!-- <div class="block-area atcl-area clearfix">
 				<h2 class="index-title">熱門購物話題推薦</h2>
 				<a href="#" data-icon="k" class="more-link">更多</a>
 				<div class="atcl-left">
@@ -331,7 +658,6 @@
 						<span class="atcl-count" data-icon="D">492</span>
 					</a>
 					<a href="#" class="atcl-title">新鮮營養看得見---慢磨機全機型總整理</a>
-					<!-- <span class="atcl-date">2017-1-24</span> -->
 					<p class="atcl-content">
 						根據調查發現，國內9成民眾膳食纖維攝取不足，遠低於建議攝取量的一半。 而慢磨機利用石磨原理，可以保留蔬果中最原始的味道與養分，是現今許多外食上班族極需配備
 					</p>
@@ -343,7 +669,6 @@
 						<span class="atcl-count" data-icon="D">23434</span>
 					</a>
 					<a href="#" class="atcl-title">迎接冬季新生兒 必備清淨除濕機怎麼挑</a>
-					<!-- <span class="atcl-date">2017-1-23</span> -->
 				</div>
 				<div class="atcl-right">
 					<a href="#" class="atcl-img">
@@ -352,7 +677,6 @@
 						<span class="atcl-count" data-icon="D">4167</span>
 					</a>
 					<a href="#" class="atcl-title">2016年必Buy 達人指定款咖啡機</a>
-					<!-- <span class="atcl-date">2016-12-13</span> -->
 				</div>
 				<div class="atcl-right">
 					<a href="#" class="atcl-img">
@@ -361,7 +685,6 @@
 						<span class="atcl-count" data-icon="D">7785</span>
 					</a>
 					<a href="#" class="atcl-title">新生兒尿布採購入門</a>
-					<!-- <span class="atcl-date">2016-11-30</span> -->
 				</div>
 				<div class="atcl-right">
 					<a href="#" class="atcl-img">
@@ -370,9 +693,323 @@
 						<span class="atcl-count" data-icon="D">1763</span>
 					</a>
 					<a href="#" class="atcl-title">寶寶滿月囉! 滿月禮也可以送給媽咪哦!</a>
-					<!-- <span class="atcl-date">2016-10-21</span> -->
+				</div>
+			</div> -->
+			<div class="block-area atcl-area clearfix">
+				<h2 class="index-title">熱門購物話題推薦</h2>
+				<a href="#" data-icon="k" class="more-link">更多</a>
+				<div class="area-body">
+					<div class="article-box">
+						<a href="#" target="_blank" class="img-box">
+							<img src="https://i.imgur.com/gn4a5Lj.jpg" alt="guide-img">
+						</a>
+						<a href="#" target="_blank" class="atcl-title">新鮮營養看得見---慢磨機全機型總整理</a>
+						<p class="atcl-content">
+							根據調查發現，國內9成民眾膳食纖維攝取不足，遠低於建議攝取量的一半。 而慢磨機利用石磨原理，可以保留蔬果中最原始的味道與養分，是現今許多外食上班族極需配備
+						</p>
+					</div>
+					<div class="article-box">
+						<a href="#" target="_blank" class="img-box">
+							<img src="https://i.imgur.com/gn4a5Lj.jpg" alt="guide-img">
+						</a>
+						<a href="#" target="_blank" class="atcl-title">新鮮營養看得見---慢磨機全機型總整理</a>
+						<p class="atcl-content">
+							根據調查發現，國內9成民眾膳食纖維攝取不足，遠低於建議攝取量的一半。 而慢磨機利用石磨原理，可以保留蔬果中最原始的味道與養分，是現今許多外食上班族極需配備
+						</p>
+					</div>
+					<div class="article-box">
+						<a href="#" target="_blank" class="img-box">
+							<img src="https://www.prettymyparty.com/wp-content/uploads/2012/06/BGfeature.jpg" alt="guide-img">
+						</a>
+						<a href="#" target="_blank" class="atcl-title">新鮮營養看得見---慢磨機全機型總整理</a>
+						<p class="atcl-content">
+							根據調查發現，國內9成民眾膳食纖維攝取不足，遠低於建議攝取量的一半。 而慢磨機利用石磨原理，可以保留蔬果中最原始的味道與養分，是現今許多外食上班族極需配備
+						</p>
+					</div>
 				</div>
 			</div>
+			<!-- <ul class="block-area atcl-area keyword-area clearfix" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+				<li class="title">熱門關鍵字：</li>
+				<li itemprop="name"><a itemprop="url" href="#" target="_blank">Apple</a></li>
+				<li itemprop="name"><a itemprop="url" href="#" target="_blank">Samsung</a></li>
+				<li itemprop="name"><a itemprop="url" href="#" target="_blank">ASUS</a></li>
+				<li itemprop="name"><a itemprop="url" href="#" target="_blank">SONY</a></li>
+				<li itemprop="name"><a itemprop="url" href="#" target="_blank">小米</a></li>
+				<li itemprop="name"><a itemprop="url" href="#" target="_blank">hTc</a></li>
+				<li itemprop="name"><a itemprop="url" href="#" target="_blank">OPPO</a></li>
+				<li itemprop="name"><a itemprop="url" href="#" target="_blank">nanoblock神奇寶貝 大蔥鴨</a></li>
+				<li itemprop="name"><a itemprop="url" href="#" target="_blank">nanoblock神奇寶貝 大蔥鴨</a></li>
+				<li itemprop="name"><a itemprop="url" href="#" target="_blank">nanoblock神奇寶貝 大蔥鴨</a></li>
+				<li><a href="#" data-icon="k">更多</a></li>
+			</ul> -->
+			<div class="block-area spec-area" itemscope="" itemtype="http://www.schema.org/SiteNavigationElement">
+                <h2 class="index-title">購物比價網站價格比價王</h2>
+                <a itemprop="url" href="/assistant.php?cid=1" title="機車比價王" class="sev-area">
+                    <span class="icon icon-scooter"></span>
+                    <p itemprop="name">機車</p>
+                </a>
+                <a itemprop="url" href="/assistant.php?cid=2" title="電暖器比價王" class="sev-area">
+                    <span class="icon icon-heater"></span>
+                    <p itemprop="name">電暖器</p>
+                </a>
+                <a itemprop="url" href="/assistant.php?cid=3" title="螢幕比價王" class="sev-area">
+                    <span class="icon icon-display"></span>
+                    <p itemprop="name">螢幕</p>
+                </a>
+                <a itemprop="url" href="/assistant.php?cid=4" title="相機比價王" class="sev-area">
+                    <span class="icon icon-camera"></span>
+                    <p itemprop="name">相機</p>
+                </a>
+                <a itemprop="url" href="/assistant.php?cid=5" title="電視比價王" class="sev-area">
+                    <span class="icon icon-tv"></span>  
+                    <p itemprop="name">電視</p>
+                </a>
+                <a itemprop="url" href="/assistant.php?cid=6" title="行車記錄器比價王" class="sev-area">
+                    <span class="icon icon-video"></span>
+                    <p itemprop="name">行車記錄器</p>
+                </a>
+                <a itemprop="url" href="/assistant.php?cid=7" title="冰箱比價王" class="sev-area">
+                    <span class="icon icon-frig"></span>
+                    <p itemprop="name">冰箱</p>
+                </a>
+                <a itemprop="url" href="/assistant.php?cid=8" title="筆電比價王" class="sev-area">
+                    <span class="icon icon-laptop"></span>
+                    <p itemprop="name">筆電</p>
+                </a>
+                <a  itemprop="url" href="/assistant.php?cid=12" title="咖啡機比價王" class="sev-area">
+                    <span class="icon icon-coffee"></span>
+                    <p itemprop="name">咖啡機</p>
+                </a>
+                <a  itemprop="url" href="/assistant.php?cid=18" title="吸塵器比價王" class="sev-area">
+                    <span class="icon icon-vacuum"></span>
+                    <p itemprop="name">吸塵器</p>
+                </a>
+                <a itemprop="url" href="/assistant.php?cid=870" title="除濕機比價王" class="sev-area">
+                    <span class="icon icon-dehumid"></span>
+                    <p itemprop="name">除濕機</p>
+                </a>
+      </div>
+      <h2 class="block-area spec-area extra index-title">熱門搜尋</h2>
+      <div class="block-area spec-area extra">
+        <ul class="cate-list">
+          <li>
+      			<span class="keyword-text">精選品牌</span>
+            <div class="keyword-tooltip align-left">
+            	<h4 class="kt-title">精選品牌</h4>
+            	<ul class="keyword-group">
+            		<li class="keyword-box"><a href="#" class="keyword-text">Apple iPad Pro</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">平板電腦</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">數位錄音筆</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">無線基地台</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">外接光碟機</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">New Nexus 7</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">ipad mini保護套</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">筆記型電腦</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">ASUS Transformer Pad</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">網路分享器</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">相片印表機</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">ASUS MeMO Pad</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">滑鼠</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">Lenovo筆電</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">記憶體</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">Chromebook</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">Surface Pro 3</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">ASUS筆電</a></li>
+            		<li class="keyword-box"><a href="#" class="keyword-text">Acer筆電</a></li>
+            	</ul>
+            </div>
+          </li>
+          <li>
+            <span class="keyword-text">
+              熱門銷售王</span>
+            </a>
+            <div class="keyword-tooltip align-left">
+            	<h4 class="kt-title">熱門銷售王</h4>
+            	<div class="keyword-group">
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            	</div>
+            </div>
+          </li>
+          <li>
+            <span class="keyword-text">
+              熱銷商品
+            </span>
+            <div class="keyword-tooltip align-left">
+            	<h4 class="kt-title">熱銷商品</h4>
+            	<div class="keyword-group">
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            	</div>
+            </div>
+          </li>
+          <li>
+            <span class="keyword-text">品牌推薦</span>
+            <div class="keyword-tooltip align-left">
+            	<h4 class="kt-title">品牌推薦</h4>
+            	<div class="keyword-group">
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            	</div>
+            </div>
+          </li>
+          <li>
+            <span class="keyword-text">大家都在找</span>
+            <div class="keyword-tooltip align-right">
+            	<h4 class="kt-title">大家都在找</h4>
+            	<div class="keyword-group">
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            	</div>
+            </div>
+          </li>
+          <li>
+            <span class="keyword-text">最低價商品</span>
+            <div class="keyword-tooltip align-right">
+            	<h4 class="kt-title">最低價商品</h4>
+            	<div class="keyword-group">
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            	</div>
+            </div>
+          </li>
+          <li>
+            <span class="keyword-text">達人強推</span>
+            <div class="keyword-tooltip align-right">
+            	<h4 class="kt-title">達人強推</h4>
+            	<div class="keyword-group">
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            	</div>
+            </div>
+          </li>
+          <li>
+            <span class="keyword-text">每日新發現</span>
+            <div class="keyword-tooltip align-right">
+            	<h4 class="kt-title">每日新發現</h4>
+            	<div class="keyword-group">
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            		<h5 class="keyword-box"><a href="#" class="keyword-text">34567 漢堡包</a></h5>
+            	</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="block-area spec-area extra">
+        <ul class="cate-list">
+          <li>
+            <a href="/cate1-3C%E9%9B%BB%E8%85%A6%E9%80%B1%E9%82%8A/" class="keyword-text">
+              3C電腦週邊
+            </a>
+          </li>
+          <li>
+            <a href="/cate2-%E8%A6%96%E8%81%BD%E5%AE%B6%E9%9B%BB/" class="keyword-text">
+              視聽家電
+            </a>
+          </li>
+          <li>
+            <a href="/cate3-3C%E6%89%8B%E6%A9%9F%E7%9B%B8%E6%A9%9F/" class="keyword-text">
+              3C手機相機
+            </a>
+          </li>
+          <li>
+            <a href="/cate4-%E6%B1%BD%E8%BB%8A%E6%A9%9F%E8%BB%8A/" class="keyword-text">
+              汽車機車
+            </a>
+          </li>
+          <li>
+            <a href="/cate6-%E7%BE%8E%E5%A6%9D%E4%BF%9D%E9%A4%8A/" class="keyword-text">
+              美妝保養
+            </a>
+          </li>
+          <li>
+            <a href="/cate7-%E9%81%8B%E5%8B%95%E4%BC%91%E9%96%92/" class="keyword-text">
+              運動休閒
+            </a>
+          </li>
+          <li>
+            <a href="/cate9-%E7%94%9F%E6%B4%BB%E7%94%A8%E5%93%81/" class="keyword-text">
+              生活用品
+            </a>
+          </li>
+          <li>
+            <a href="/cate10-%E9%A4%8A%E7%94%9F%E4%BF%9D%E5%81%A5/" class="keyword-text">
+              養生保健
+            </a>
+          </li>
+          <li>
+            <a href="/cate11-%E5%A9%A6%E5%B9%BC%E7%8E%A9%E5%85%B7/" class="keyword-text">
+              婦幼玩具
+            </a>
+          </li>
+          <li>
+            <a href="/cate12-%E9%A3%9F%E5%93%81%E9%A3%B2%E6%96%99/" class="keyword-text">
+              食品飲料
+            </a>
+          </li>
+          <li>
+            <span class="keyword-text more">更多</span>
+            <div class="keyword-tooltip align-right">
+              <h4 class="kt-title">更多</h4>
+              <ul class="keyword-group">
+                <li class="keyword-box">
+                  <a href="/cate5-%E7%B2%BE%E5%93%81%E7%8F%A0%E5%AF%B6/" class="keyword-text">
+                    精品珠寶
+                  </a>
+                </li>
+                <li class="keyword-box">
+                  <a href="/cate8-%E5%AE%B6%E4%BF%B1%E5%AF%A2%E5%85%B7/" class="keyword-text">
+                    家俱寢具
+                  </a>
+                </li>
+                <li class="keyword-box">
+                  <a href="/cate13-%E9%9E%8B%E5%8C%85%E9%85%8D%E4%BB%B6/" class="keyword-text">
+                    鞋包配件
+                  </a>
+                </li>
+                <li class="keyword-box">
+                  <a href="/cate14-%E7%94%B7%E5%A5%B3%E6%9C%8D%E9%A3%BE/" class="keyword-text">
+                    男女服飾
+                  </a>
+                </li>
+                <li class="keyword-box">
+                  <a href="/cate16-%E6%9B%B8%E7%B1%8D/" class="keyword-text">
+                    書籍
+                  </a>
+                </li>
+              </ul>
+            </div>  
+          </li>
+        </ul>
+      </div>
 		</section>
 	</div>
 	<footer>

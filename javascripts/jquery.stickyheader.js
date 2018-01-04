@@ -54,6 +54,7 @@ $(function(){
 
 					// Set width of sticky table head
 					$stickyHead.width($t.width());
+					$stickyHead.css('visibility', 'hidden');
 
 					// Set width of sticky table col
 					$stickyCol.find('th').add($stickyInsct.find('th')).width($t.find('thead th').width())
@@ -109,11 +110,13 @@ $(function(){
 							opacity: 1,
 							left: $stickyWrap.scrollLeft()
 						});
+						$stickyHead.css('visibility', 'visible');
 					} else {
 						// When left of wrapping parent is in view
 						$stickyCol
 						.css({ opacity: 0 })
 						.add($stickyInsct).css({ left: 0 });
+						$stickyHead.css('visibility', 'hidden');
 					}
 				},
 				calcAllowance = function () {

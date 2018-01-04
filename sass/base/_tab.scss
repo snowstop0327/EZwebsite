@@ -14,15 +14,21 @@ ul.tabs-area{
 		}
 		&.active{
 			border-bottom: 3px solid $orange-light;
-			color: $orange-light;
+			a {
+				color: $orange-light;
+			}
 		}
-		&:hover{
-			color: $orange-light;
+		a {
+			color: $gray-light;
+			&:hover {
+				color: $orange-light;
+			}
 		}
 		.tab-keyword{
 			display: inline-block;
 			margin: 0;
 			font-weight: bold;
+			// color: $gray-light;
 		}
 		.tab-pd{
 			display: inline-block;
@@ -41,6 +47,9 @@ ul.tabs-area{
 			margin: -13px 8px 0px 0;
 			font-size: 30px;
 			vertical-align: middle;
+		}
+		span.icon {
+			color: $gray-light; 
 		}
 	}
 }

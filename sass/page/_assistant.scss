@@ -1,0 +1,51 @@
+.inline {
+    display: inline
+}
+
+div.assistant {
+    background-color: #fff;
+    border: 1px solid #e8e8e8;
+    width: 100%;
+    height: 100%
+}
+
+.assistant-head {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #e8e8e8;
+    background-color: #fff;
+    font-size: 1.2em;
+    color: #ff7f00
+}
+
+.inline-flex {
+    display: -webkit-inline-box;
+}
+
+ul.assistant {
+    width: 180px;
+    line-height: 1.8em
+}
+
+.assistant-th {
+    color: #7f8492;
+    font-size: 1.2em
+}
+
+.ast-active {
+    display: block
+}
+
+.ast-unactive {
+    display: none
+}
+
+.ezpd-tag {
+    position: absolute;
+    background-color: #ff7f00;
+    padding: 0 5px
+}
+
+.ezpd-tag a {
+    color: #fff
+}
