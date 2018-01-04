@@ -1,46 +1,22 @@
 @-webkit-keyframes ripple {
   0% {
-<<<<<<< HEAD
     box-shadow: 0px 0px 0px 1px transparent;
   }
   50% {
     box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.1);
   }
   100% {
-=======
-    -webkit-box-shadow: 0px 0px 0px 1px transparent;
-    box-shadow: 0px 0px 0px 1px transparent;
-  }
-  50% {
-    -webkit-box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.1);
-  }
-  100% {
-    -webkit-box-shadow: 0px 0px 0px 15px transparent;
->>>>>>> origin/master
     box-shadow: 0px 0px 0px 15px transparent;
   }
 }
 @keyframes ripple {
   0% {
-<<<<<<< HEAD
     box-shadow: 0px 0px 0px 1px transparent;
   }
   50% {
     box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.1);
   }
   100% {
-=======
-    -webkit-box-shadow: 0px 0px 0px 1px transparent;
-    box-shadow: 0px 0px 0px 1px transparent;
-  }
-  50% {
-    -webkit-box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.1);
-    box-shadow: 0px 0px 0px 15px rgba(0, 0, 0, 0.1);
-  }
-  100% {
-    -webkit-box-shadow: 0px 0px 0px 15px transparent;
->>>>>>> origin/master
     box-shadow: 0px 0px 0px 15px transparent;
   }
 }
@@ -612,16 +588,6 @@ input[type=number]::-webkit-outer-spin-button {
   border: 0;
 }
 
-<<<<<<< HEAD
-=======
-@font-face {
-  font-family: "ez-website";
-  src: url("fonts/ez-website.eot?v=7");
-  src: url("fonts/ez-website.eot?v=7#iefix") format("embedded-opentype"), url("fonts/ez-website.woff?v=7") format("woff"), url("fonts/ez-website.ttf?v=7") format("truetype"), url("fonts/ez-website.svg?v=7#ez-website") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
->>>>>>> origin/master
 [data-icon]:before {
   font-family: "ez-website" !important;
   content: attr(data-icon);
@@ -918,11 +884,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 .icons-atm, .icons-card, .icons-cart, .icons-delete-btn, .icons-ez-app, .icons-ez-plugin, .icons-familymart, .icons-gift, .icons-like, .icons-logo, .icons-open-gift, .icons-seven {
   display: inline-block;
-<<<<<<< HEAD
   background: url("/asset/images/icons-sprite.png") no-repeat;
-=======
-  background: url("../images/icons-sprite.png") no-repeat;
->>>>>>> origin/master
   -moz-background-size: 180px auto;
   -o-background-size: 180px auto;
   -webkit-background-size: 180px auto;
@@ -1005,11 +967,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .content {
-<<<<<<< HEAD
   padding-top: 96px;
-=======
-  padding-top: 116px;
->>>>>>> origin/master
 }
 
 .block-area {
@@ -1477,10 +1435,6 @@ textarea.feeback-text:focus {
   background-color: #ff6706;
   border: 1px solid #ff6706;
   color: #ffffff;
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px inset;
->>>>>>> origin/master
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px inset;
 }
 
@@ -1517,17 +1471,8 @@ textarea.feeback-text:focus {
   position: absolute;
   content: '';
   border-radius: 50%;
-<<<<<<< HEAD
   transition: all .3s ease;
   transition-property: border-color, -webkit-transform;
-=======
-  -webkit-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition: all .3s ease;
-  -webkit-transition-property: border-color, -webkit-transform;
-  transition-property: border-color, -webkit-transform;
-  -o-transition-property: transform, border-color;
->>>>>>> origin/master
   transition-property: transform, border-color;
   transition-property: transform, border-color, -webkit-transform;
 }
@@ -1556,24 +1501,12 @@ textarea.feeback-text:focus {
   margin: 0;
   padding: 0;
   text-align: center;
-<<<<<<< HEAD
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-=======
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
->>>>>>> origin/master
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1836,18 +1769,10 @@ input[type="checkbox"].switch {
   -webkit-appearance: none;
   -moz-appearance: none;
   -webkit-transition: 400ms all;
-<<<<<<< HEAD
-=======
-  -o-transition: 400ms all;
->>>>>>> origin/master
   transition: 400ms all;
   margin: 0 auto 0 auto;
   border-radius: 50px;
   background: white;
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
->>>>>>> origin/master
   box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.1);
   width: 44px;
   height: 25px;
@@ -1864,24 +1789,12 @@ input[type="checkbox"].switch {
 
 input[type="checkbox"].switch:checked, input[type="checkbox"].switch.checked {
   background: #53D669;
-<<<<<<< HEAD
   box-shadow: inset 0 0 0 15px #53D669;
-=======
-  -webkit-box-shadow: inset 0 0 0 15px #53D669;
-  box-shadow: inset 0 0 0 15px #53D669;
-  -webkit-transition: 250ms all;
-  -o-transition: 250ms all;
->>>>>>> origin/master
   transition: 250ms all;
 }
 
 input[type="checkbox"].switch::before {
   content: '';
-<<<<<<< HEAD
-=======
-  -webkit-transition: 300ms all;
-  -o-transition: 300ms all;
->>>>>>> origin/master
   transition: 300ms all;
   position: absolute;
   left: 2px;
@@ -1896,10 +1809,6 @@ input[type="checkbox"].switch::before {
   height: 20px;
   border-radius: 40px;
   background: #FFFFFF;
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.06), 0 0 0 0 rgba(0, 0, 0, 0.06), 0 6px 10px 0 rgba(0, 0, 0, 0.15), 0 0 2px 0 rgba(0, 0, 0, 0.07), 0 4px 6px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.11);
->>>>>>> origin/master
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.06), 0 0 0 0 rgba(0, 0, 0, 0.06), 0 6px 10px 0 rgba(0, 0, 0, 0.15), 0 0 2px 0 rgba(0, 0, 0, 0.07), 0 4px 6px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.11);
   -webkit-animation: button 3s ease-out;
   animation: button 3s ease-out;
@@ -1913,55 +1822,31 @@ input[type="checkbox"].switch:checked::before, input[type="checkbox"].switch.che
 
 input[type="checkbox"].switch.red:checked {
   background: #FF4F2F;
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: inset 0 0 0 15px #FF4F2F;
->>>>>>> origin/master
   box-shadow: inset 0 0 0 15px #FF4F2F;
 }
 
 input[type="checkbox"].switch.orange:checked {
   background: #ff6706;
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: inset 0 0 0 15px #ff6706;
->>>>>>> origin/master
   box-shadow: inset 0 0 0 15px #ff6706;
 }
 
 input[type="checkbox"].switch.yellow:checked {
   background: #FFE842;
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: inset 0 0 0 15px #FFE842;
->>>>>>> origin/master
   box-shadow: inset 0 0 0 15px #FFE842;
 }
 
 input[type="checkbox"].switch.green:checked {
   background: #50DF3D;
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: inset 0 0 0 15px #50DF3D;
->>>>>>> origin/master
   box-shadow: inset 0 0 0 15px #50DF3D;
 }
 
 input[type="checkbox"].switch.blue:checked {
   background: #40A7ED;
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: inset 0 0 0 15px #40A7ED;
->>>>>>> origin/master
   box-shadow: inset 0 0 0 15px #40A7ED;
 }
 
 input[type="checkbox"].switch.purple:checked {
   background: #AF57EC;
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: inset 0 0 0 15px #AF57EC;
->>>>>>> origin/master
   box-shadow: inset 0 0 0 15px #AF57EC;
 }
 
@@ -2130,10 +2015,6 @@ input:focus, textarea:focus {
   -o-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
   -webkit-transition: all 0.3s ease-in-out, visibility 0s linear, z-index 0s linear;
   -webkit-transition-delay: 0s, 0.3s, 0.01s;
-<<<<<<< HEAD
-=======
-  -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
->>>>>>> origin/master
   transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 .user-func .user-menu .user-menu-dropdown a {
@@ -2158,11 +2039,6 @@ input:focus, textarea:focus {
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
   transform: translateY(0%);
-<<<<<<< HEAD
-=======
-  -webkit-transition-delay: 0s, 0s, 0.3s;
-  -o-transition-delay: 0s, 0s, 0.3s;
->>>>>>> origin/master
   transition-delay: 0s, 0s, 0.3s;
   z-index: 1;
 }
@@ -2176,17 +2052,9 @@ input:focus, textarea:focus {
 }
 .channel-list > li a {
   display: block;
-<<<<<<< HEAD
   padding: 0px 15px 4px;
   color: #393f4e;
   font-size: 14px;
-=======
-  padding: 10px 15px;
-  color: #393f4e;
-  font-size: 14px;
-  -webkit-transition: 0.1s all ease-in;
-  -o-transition: 0.1s all ease-in;
->>>>>>> origin/master
   transition: 0.1s all ease-in;
 }
 .channel-list > li a:hover {
@@ -2270,17 +2138,9 @@ input:focus, textarea:focus {
   left: 0;
   width: 100%;
   height: 100%;
-<<<<<<< HEAD
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-=======
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
->>>>>>> origin/master
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -2292,10 +2152,6 @@ input:focus, textarea:focus {
   z-index: 99999;
 }
 .popup-banner.show {
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
->>>>>>> origin/master
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -2512,10 +2368,6 @@ footer .app-area .app-border {
   border-radius: 999em;
   max-width: 120px;
   white-space: nowrap;
-<<<<<<< HEAD
-=======
-  -o-text-overflow: ellipsis;
->>>>>>> origin/master
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -2538,11 +2390,7 @@ footer .app-area .app-border {
   position: absolute;
   top: 0;
   right: -8px;
-<<<<<<< HEAD
   background: url("/asset/images/icons-sprite.png") no-repeat;
-=======
-  background: url("../images/icons-sprite.png") no-repeat;
->>>>>>> origin/master
   -moz-background-size: 180px auto;
   -o-background-size: 180px auto;
   -webkit-background-size: 180px auto;
@@ -2581,10 +2429,6 @@ footer .app-area .app-border {
   line-height: 32px;
   white-space: nowrap;
   overflow: hidden;
-<<<<<<< HEAD
-=======
-  -o-text-overflow: ellipsis;
->>>>>>> origin/master
   text-overflow: ellipsis;
   color: #1e2430;
 }
@@ -2656,11 +2500,6 @@ footer .app-area .app-border {
   color: #2B81DA;
 }
 .keyword-area > li:not(:last-child) a {
-<<<<<<< HEAD
-=======
-  -webkit-transition: 0.1s all ease-out;
-  -o-transition: 0.1s all ease-out;
->>>>>>> origin/master
   transition: 0.1s all ease-out;
 }
 .keyword-area > li:not(:last-child) a:hover {
@@ -2769,10 +2608,6 @@ footer .app-area .app-border {
   max-height: 19px;
   overflow: hidden;
   white-space: nowrap;
-<<<<<<< HEAD
-=======
-  -o-text-overflow: ellipsis;
->>>>>>> origin/master
   text-overflow: ellipsis;
   color: #7f8492;
 }
@@ -2872,11 +2707,7 @@ footer .app-area .app-border {
 .search-rst .pd-price .num.num-pd {
   color: #e53331;
 }
-<<<<<<< HEAD
 .search-rst .sps-box {
-=======
-.search-rst .sponsor-box {
->>>>>>> origin/master
   display: block;
   position: absolute;
   top: 10px;
@@ -2886,11 +2717,7 @@ footer .app-area .app-border {
   max-height: 24px;
   z-index: 3;
 }
-<<<<<<< HEAD
 .search-rst .sps-box i {
-=======
-.search-rst .sponsor-box i {
->>>>>>> origin/master
   position: relative;
   display: inline-block;
   font-size: 23px;
@@ -2898,7 +2725,6 @@ footer .app-area .app-border {
   line-height: inherit;
   vertical-align: middle;
 }
-<<<<<<< HEAD
 .search-rst .sps-box .sps-text {
   display: none;
 }
@@ -2906,15 +2732,6 @@ footer .app-area .app-border {
   background: #e8e8e8;
 }
 .search-rst .sps-box:hover .sps-text {
-=======
-.search-rst .sponsor-box .sponsor-text {
-  display: none;
-}
-.search-rst .sponsor-box:hover {
-  background: #e8e8e8;
-}
-.search-rst .sponsor-box:hover .sponsor-text {
->>>>>>> origin/master
   display: block;
   position: absolute;
   top: 0;
@@ -2987,17 +2804,13 @@ footer .app-area .app-border {
 
 .like-area {
   margin: 20px 0 0 0;
-<<<<<<< HEAD
   position: relative;
   overflow: hidden;
-=======
->>>>>>> origin/master
 }
 .like-area .like-pd {
   float: left;
   display: inline-block;
   padding: 15px;
-<<<<<<< HEAD
   width: 164px;
   text-align: center;
   position: relative;
@@ -3026,18 +2839,11 @@ footer .app-area .app-border {
   z-index: 2;
 }
 .like-area .like-pd .pd-img {
-=======
-  width: 20%;
-  text-align: center;
-}
-.like-area .like-pd a.pd-img {
->>>>>>> origin/master
   display: inline-block;
   width: 120px;
   height: 120px;
   overflow: hidden;
 }
-<<<<<<< HEAD
 .like-area .like-pd .pd-img img {
   transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1) -webkit-transform;
   transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1) transform;
@@ -3051,40 +2857,21 @@ footer .app-area .app-border {
   overflow: hidden;
   text-align: left;
   height: 33.6px;
-=======
-.like-area .like-pd a.pd-img img {
-  max-width: 100%;
-}
-.like-area .like-pd a.pd-name {
-  display: block;
-  margin: 10px 0 10px 0;
-  height: 38px;
-  overflow: hidden;
-  text-align: left;
->>>>>>> origin/master
 }
 .like-area .like-pd .pd-price {
   display: block;
   font-family: "Helvetica";
   font-weight: normal;
-<<<<<<< HEAD
   font-size: 18px;
-=======
->>>>>>> origin/master
   color: #ff7f00;
   text-align: left;
 }
 .like-area .like-pd .platform {
   display: block;
-<<<<<<< HEAD
-=======
-  font-size: 12px;
->>>>>>> origin/master
   text-align: left;
   color: #7f8492;
 }
 
-<<<<<<< HEAD
 .carousel-stage {
   width: 10000%;
   margin: 0;
@@ -3142,8 +2929,6 @@ footer .app-area .app-border {
   padding: 0 2px;
 }
 
-=======
->>>>>>> origin/master
 .aside-area {
   margin: 0 0 20px 0;
 }
@@ -3207,10 +2992,6 @@ footer .app-area .app-border {
   padding: 10px 0;
   background-color: #ffffff;
   min-width: 250px;
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.6);
->>>>>>> origin/master
   box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.6);
   z-index: 99;
 }
@@ -3275,11 +3056,6 @@ footer .app-area .app-border {
   margin: 0 10px;
   cursor: pointer;
   font-size: 16px;
-<<<<<<< HEAD
-=======
-  -webkit-transition: 0.2s all ease-out;
-  -o-transition: 0.2s all ease-out;
->>>>>>> origin/master
   transition: 0.2s all ease-out;
 }
 .dropdown-group .button-area span:hover {
@@ -3296,11 +3072,6 @@ footer .app-area .app-border {
 
 .btn-dropdown {
   border: 0;
-<<<<<<< HEAD
-=======
-  -webkit-transition: 0.3s all ease-out;
-  -o-transition: 0.3s all ease-out;
->>>>>>> origin/master
   transition: 0.3s all ease-out;
   padding: 5px 10px;
   margin: 10px 5px;
@@ -3322,10 +3093,6 @@ footer .app-area .app-border {
 }
 
 .toggle-area {
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
->>>>>>> origin/master
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -3333,24 +3100,12 @@ footer .app-area .app-border {
   padding: 5px 10px;
 }
 .toggle-area span {
-<<<<<<< HEAD
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-=======
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  display: -webkit-box;
->>>>>>> origin/master
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -3369,10 +3124,6 @@ footer .app-area .app-border {
 }
 
 .flex-form {
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
->>>>>>> origin/master
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -3382,24 +3133,12 @@ footer .app-area .app-border {
 }
 .flex-form .centet-area {
   margin: 0 3px;
-<<<<<<< HEAD
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-=======
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
->>>>>>> origin/master
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -3413,10 +3152,6 @@ footer .app-area .app-border {
 }
 
 .textfield {
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
->>>>>>> origin/master
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -3471,13 +3206,10 @@ footer .app-area .app-border {
   max-height: 202.85714px;
 }
 
-<<<<<<< HEAD
 .aside-area {
   position: relative;
   overflow: hidden;
 }
-=======
->>>>>>> origin/master
 .aside-area .area-head {
   position: relative;
 }
@@ -3498,15 +3230,10 @@ footer .app-area .app-border {
 .aside-area .keyword-text {
   max-width: 190px;
   white-space: nowrap;
-<<<<<<< HEAD
-=======
-  -o-text-overflow: ellipsis;
->>>>>>> origin/master
   text-overflow: ellipsis;
   overflow: hidden;
 }
 
-<<<<<<< HEAD
 .carousel-3 {
   overflow: hidden;
   height: 304px;
@@ -3685,8 +3412,6 @@ footer .app-area .app-border {
   border-color: #7f8492;
 }
 
-=======
->>>>>>> origin/master
 .keyword-area .keyword-box {
   margin: 0 5px;
 }
@@ -3697,18 +3422,9 @@ footer .app-area .app-border {
   color: #1e2430;
   text-align: center;
   border-radius: 999em;
-<<<<<<< HEAD
   transition: 0.1s all ease-out;
   max-width: 186px;
   white-space: nowrap;
-=======
-  -webkit-transition: 0.1s all ease-out;
-  -o-transition: 0.1s all ease-out;
-  transition: 0.1s all ease-out;
-  max-width: 186px;
-  white-space: nowrap;
-  -o-text-overflow: ellipsis;
->>>>>>> origin/master
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -3745,7 +3461,6 @@ footer .app-area .app-border {
   margin: 0;
 }
 
-<<<<<<< HEAD
 .keyword-area.bottom-area .keyword-text, .keyword-area.bottom-area .title, .keyword-area.bottom-area .more {
   color: #656c7d;
 }
@@ -3814,8 +3529,6 @@ footer .app-area .app-border {
   overflow: hidden;
 }
 
-=======
->>>>>>> origin/master
 .index-bg {
   background-color: #f5f5f5;
 }
@@ -3863,10 +3576,6 @@ footer .app-area .app-border {
   -o-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
   -webkit-transition: all 0.3s ease-in-out, visibility 0s linear, z-index 0s linear;
   -webkit-transition-delay: 0s, 0.3s, 0.01s;
-<<<<<<< HEAD
-=======
-  -webkit-transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
->>>>>>> origin/master
   transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
 }
 .cate-list .sub-menu-parent:hover .sub-menu {
@@ -3875,11 +3584,6 @@ footer .app-area .app-border {
   -webkit-transform: translateY(0%);
   -ms-transform: translateY(0%);
   transform: translateY(0%);
-<<<<<<< HEAD
-=======
-  -webkit-transition-delay: 0s, 0s, 0.3s;
-  -o-transition-delay: 0s, 0s, 0.3s;
->>>>>>> origin/master
   transition-delay: 0s, 0s, 0.3s;
   z-index: 5;
 }
@@ -3929,11 +3633,6 @@ footer .app-area .app-border {
   font-size: 12px;
   color: #c5c5c5;
   padding: 3px 8px;
-<<<<<<< HEAD
-=======
-  -webkit-transition: 0.2s all ease-in-out;
-  -o-transition: 0.2s all ease-in-out;
->>>>>>> origin/master
   transition: 0.2s all ease-in-out;
   border-radius: 10px;
 }
@@ -3951,13 +3650,9 @@ footer .app-area .app-border {
   font-size: 18px;
   color: #ff7f00;
 }
-<<<<<<< HEAD
 .index-title h1,
 .index-title h2,
 .index-title h3 {
-=======
-.index-title h1, .index-title h2, .index-title h3 {
->>>>>>> origin/master
   display: inline;
 }
 
@@ -4033,12 +3728,8 @@ footer .app-area .app-border {
   width: 37px;
   color: #ffffff;
 }
-<<<<<<< HEAD
 .spec-area .next-btn,
 .spec-area .prev-btn {
-=======
-.spec-area .next-btn, .spec-area .prev-btn {
->>>>>>> origin/master
   position: absolute;
   top: calc(50% - 20px);
   cursor: pointer;
@@ -4047,37 +3738,21 @@ footer .app-area .app-border {
   border-radius: 50%;
   background: #ffffff;
   color: #ff6706;
-<<<<<<< HEAD
   transition: 0.2s all ease-in;
   overflow: hidden;
 }
 .spec-area .next-btn:hover,
 .spec-area .prev-btn:hover {
-=======
-  -webkit-transition: 0.2s all ease-in;
-  -o-transition: 0.2s all ease-in;
-  transition: 0.2s all ease-in;
-  overflow: hidden;
-}
-.spec-area .next-btn:hover, .spec-area .prev-btn:hover {
->>>>>>> origin/master
   text-decoration: none;
   background: #ff6706;
   color: #ffffff;
 }
-<<<<<<< HEAD
 .spec-area .next-btn span,
 .spec-area .prev-btn span {
   display: inline-block;
 }
 .spec-area .next-btn span:before,
 .spec-area .prev-btn span:before {
-=======
-.spec-area .next-btn span, .spec-area .prev-btn span {
-  display: inline-block;
-}
-.spec-area .next-btn span:before, .spec-area .prev-btn span:before {
->>>>>>> origin/master
   display: inline-block;
   width: 40px;
   line-height: 40px;
@@ -4087,15 +3762,10 @@ footer .app-area .app-border {
 }
 .spec-area .next-btn {
   right: -20px;
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: 1px 1px 8px rgba(127, 132, 146, 0.8);
->>>>>>> origin/master
   box-shadow: 1px 1px 8px rgba(127, 132, 146, 0.8);
 }
 .spec-area .prev-btn {
   left: -20px;
-<<<<<<< HEAD
   box-shadow: -1px 1px 8px rgba(127, 132, 146, 0.8);
 }
 
@@ -4110,29 +3780,12 @@ footer .app-area .app-border {
   content: "";
   display: table;
   clear: both;
-=======
-  -webkit-box-shadow: -1px 1px 8px rgba(127, 132, 146, 0.8);
-  box-shadow: -1px 1px 8px rgba(127, 132, 146, 0.8);
-}
-
-.flex-area {
-  width: 100%;
-  position: relative;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  overflow: hidden;
->>>>>>> origin/master
 }
 .flex-area li.spec-pd {
   width: 200px;
   margin: 0 10px;
   padding: 0;
-<<<<<<< HEAD
   float: left;
-=======
->>>>>>> origin/master
 }
 
 .more-link {
@@ -4294,10 +3947,6 @@ a.block-area img {
 .index-pd-card {
   width: 19%;
   float: left;
-<<<<<<< HEAD
-=======
-  -webkit-box-sizing: border-box;
->>>>>>> origin/master
   box-sizing: border-box;
   margin: calc(5% / 10);
   min-height: 297px;
@@ -4307,21 +3956,12 @@ a.block-area img {
   padding: 10px;
   color: inherit;
   margin: 0 auto;
-<<<<<<< HEAD
-=======
-  -webkit-transition: 0.2s all ease-out;
-  -o-transition: 0.2s all ease-out;
->>>>>>> origin/master
   transition: 0.2s all ease-out;
   outline: 1px solid #ffffff;
   background: #ffffff;
 }
 .index-pd-card .pd-link:hover {
   outline: 1px solid #ff6706;
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: 0px 0px 5px #ff6706;
->>>>>>> origin/master
   box-shadow: 0px 0px 5px #ff6706;
   text-decoration: none;
   -webkit-transform: scale(1.01);
@@ -4336,10 +3976,6 @@ a.block-area img {
   width: 100%;
   height: 150px;
   overflow: hidden;
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
->>>>>>> origin/master
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -4379,10 +4015,6 @@ a.block-area img {
 
 .ellipsis {
   overflow: hidden;
-<<<<<<< HEAD
-=======
-  -o-text-overflow: ellipsis;
->>>>>>> origin/master
   text-overflow: ellipsis;
   white-space: nowrap;
   display: inline-block;
@@ -4393,10 +4025,6 @@ a.block-area img {
   height: 36px;
   line-height: 36px;
   border: none;
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: none;
->>>>>>> origin/master
   box-shadow: none;
 }
 .block-area.keyword-area .title {
@@ -4419,10 +4047,6 @@ a.block-area img {
   overflow: visible;
   margin: 0 0;
   border: 0;
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: none;
->>>>>>> origin/master
   box-shadow: none;
   color: #656c7d;
 }
@@ -4435,17 +4059,9 @@ a.block-area img {
   width: 100%;
   float: none;
   padding: 10px;
-<<<<<<< HEAD
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-=======
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
->>>>>>> origin/master
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -4466,11 +4082,6 @@ a.block-area img {
   color: #7f8492;
   display: block;
   padding: 5px 10px;
-<<<<<<< HEAD
-=======
-  -webkit-transition: 0.2s all ease-in;
-  -o-transition: 0.2s all ease-in;
->>>>>>> origin/master
   transition: 0.2s all ease-in;
 }
 .block-area.extra .cate-list > li > .keyword-text.more {
@@ -4494,10 +4105,6 @@ a.block-area img {
   position: absolute;
   bottom: 28px;
   width: 400px;
-<<<<<<< HEAD
-=======
-  -webkit-box-sizing: border-box;
->>>>>>> origin/master
   box-sizing: border-box;
   background-color: #ffffff;
   border: 1px solid #e8e8e8;
@@ -4558,10 +4165,6 @@ a.block-area img {
 }
 .block-area.extra .cate-list > li .keyword-tooltip .keyword-group {
   padding: 10px 10px 10px 0;
-<<<<<<< HEAD
-=======
-  -webkit-box-align: center;
->>>>>>> origin/master
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -4579,10 +4182,6 @@ a.block-area img {
   max-width: 120px;
   overflow: hidden;
   white-space: nowrap;
-<<<<<<< HEAD
-=======
-  -o-text-overflow: ellipsis;
->>>>>>> origin/master
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -4608,10 +4207,6 @@ a.block-area img {
 }
 
 .area-body {
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
->>>>>>> origin/master
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -4622,10 +4217,6 @@ a.block-area img {
   -webkit-flex-basis: 0;
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
-<<<<<<< HEAD
-=======
-  -webkit-box-flex: 1;
->>>>>>> origin/master
   -webkit-flex-grow: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -4635,10 +4226,6 @@ a.block-area img {
   margin: 0.75rem;
 }
 .article-box .img-box {
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
->>>>>>> origin/master
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -4646,30 +4233,16 @@ a.block-area img {
   height: 188px;
   overflow: hidden;
   position: relative;
-<<<<<<< HEAD
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-=======
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
->>>>>>> origin/master
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
 }
 .article-box .img-box img {
   max-width: 100%;
-<<<<<<< HEAD
   transition: 0.3s -webkit-transform ease-in-out;
-=======
-  -webkit-transition: 0.3s -webkit-transform ease-in-out;
-  transition: 0.3s -webkit-transform ease-in-out;
-  -o-transition: 0.3s transform ease-in-out;
->>>>>>> origin/master
   transition: 0.3s transform ease-in-out;
   transition: 0.3s transform ease-in-out, 0.3s -webkit-transform ease-in-out;
 }
@@ -4679,12 +4252,8 @@ a.block-area img {
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
-<<<<<<< HEAD
 .article-box .atcl-title,
 .article-box .atcl-content {
-=======
-.article-box .atcl-title, .article-box .atcl-content {
->>>>>>> origin/master
   display: block;
   margin: 10px;
 }
@@ -5173,11 +4742,6 @@ a.block-area img {
 .cate-card .title-box {
   height: 120px;
   position: relative;
-<<<<<<< HEAD
-=======
-  -webkit-transition: 0.2s all ease-in-out;
-  -o-transition: 0.2s all ease-in-out;
->>>>>>> origin/master
   transition: 0.2s all ease-in-out;
 }
 .cate-card .title-box:hover {
@@ -5240,11 +4804,6 @@ a.block-area img {
 .cate-content li a {
   padding: 3px 4px;
   height: 21px;
-<<<<<<< HEAD
-=======
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
->>>>>>> origin/master
   transition: all 0.2s ease-in-out;
   display: inline-block;
   margin: 0 3px 0 0;
@@ -5371,19 +4930,11 @@ a.block-area img {
 }
 
 .cate-body {
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
->>>>>>> origin/master
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   border-top: 1px dashed #e8e8e8;
   overflow: hidden;
-<<<<<<< HEAD
-=======
-  -webkit-box-pack: justify;
->>>>>>> origin/master
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -5426,18 +4977,9 @@ a.block-area img {
   padding: 5px 10px;
   border-radius: 999em;
   font-size: 12px;
-<<<<<<< HEAD
   transition: 0.1s all ease-out;
   max-width: 100%;
   white-space: nowrap;
-=======
-  -webkit-transition: 0.1s all ease-out;
-  -o-transition: 0.1s all ease-out;
-  transition: 0.1s all ease-out;
-  max-width: 100%;
-  white-space: nowrap;
-  -o-text-overflow: ellipsis;
->>>>>>> origin/master
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -5652,10 +5194,6 @@ ul.assistant {
 
 .cate-tabs {
   position: relative;
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
->>>>>>> origin/master
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -5711,10 +5249,6 @@ ul.assistant {
 }
 
 .keyword-list {
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
->>>>>>> origin/master
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -5740,19 +5274,10 @@ ul.assistant {
   border-radius: 25px;
   text-align: center;
   color: #393f4e;
-<<<<<<< HEAD
-=======
-  -webkit-transition: 0.1s all ease-out;
-  -o-transition: 0.1s all ease-out;
->>>>>>> origin/master
   transition: 0.1s all ease-out;
   max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
-<<<<<<< HEAD
-=======
-  -o-text-overflow: ellipsis;
->>>>>>> origin/master
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -5765,11 +5290,7 @@ ul.assistant {
 .error-area {
   max-height: 235px;
   overflow: hidden;
-<<<<<<< HEAD
   background: url("/asset/images/error-bg.png") #f5f5f5;
-=======
-  background: url("../images/error-bg.png") #f5f5f5;
->>>>>>> origin/master
   background-size: 100%;
   border-radius: 2px;
   font-size: 16px;
@@ -5795,7 +5316,6 @@ ul.assistant {
   display: inline-block;
 }
 .error-word2 strong {
-<<<<<<< HEAD
   overflow: hidden;
   color: #ff7f00;
   white-space: nowrap;
@@ -5816,14 +5336,6 @@ h1.error-word2 {
   width: 60%;
   line-height: 28px;
   height: 28px;
-=======
-  max-width: 362px;
-  overflow: hidden;
-  color: #ff7f00;
-  white-space: nowrap;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
->>>>>>> origin/master
 }
 
 .sug-word li {
@@ -5897,11 +5409,6 @@ tbody tr {
 }
 
 tbody tr:nth-child(2n-1) {
-<<<<<<< HEAD
-=======
-  -webkit-transition: all .125s ease-in-out;
-  -o-transition: all .125s ease-in-out;
->>>>>>> origin/master
   transition: all .125s ease-in-out;
 }
 
@@ -5925,11 +5432,6 @@ tbody tr:hover {
   position: absolute;
   top: 0;
   left: 0;
-<<<<<<< HEAD
-=======
-  -webkit-transition: all .125s ease-in-out;
-  -o-transition: all .125s ease-in-out;
->>>>>>> origin/master
   transition: all .125s ease-in-out;
   z-index: 50;
   width: auto;
@@ -5937,10 +5439,6 @@ tbody tr:hover {
 }
 
 .sticky-wrap .sticky-thead {
-<<<<<<< HEAD
-=======
-  -webkit-box-shadow: 0 0.25em 0.1em -0.1em rgba(0, 0, 0, 0.125);
->>>>>>> origin/master
   box-shadow: 0 0.25em 0.1em -0.1em rgba(0, 0, 0, 0.125);
   z-index: 100;
   width: 100%;
@@ -5959,10 +5457,6 @@ tbody tr:hover {
 
 .sticky-wrap td,
 .sticky-wrap th {
-<<<<<<< HEAD
-=======
-  -webkit-box-sizing: border-box;
->>>>>>> origin/master
   box-sizing: border-box;
 }
 
@@ -6009,11 +5503,6 @@ tbody tr:hover {
   padding: 6px;
   max-width: 120px;
   margin: 5px auto;
-<<<<<<< HEAD
-=======
-  -webkit-transition: 0.5s ease all;
-  -o-transition: 0.5s ease all;
->>>>>>> origin/master
   transition: 0.5s ease all;
 }
 .card-table .card-img, .sticky-thead .card-img {
