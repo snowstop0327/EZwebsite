@@ -175,7 +175,11 @@
 			display: inline-block;
 			padding: 0px 7px;
 			height: 28px;
+<<<<<<< HEAD
 	  		line-height: 28px;
+=======
+  		line-height: 28px;
+>>>>>>> origin/master
 			font-size: $font-size-small;
 			color: $black;
 			text-align: center;
@@ -417,7 +421,11 @@
 			}
 		}
 	}
+<<<<<<< HEAD
 	.sps-box {
+=======
+	.sponsor-box {
+>>>>>>> origin/master
 		display: block;
 		position: absolute;
 		// left: 160px;
@@ -436,12 +444,20 @@
 			line-height: inherit;
 			vertical-align: middle;
 		}
+<<<<<<< HEAD
 		.sps-text {
+=======
+		.sponsor-text {
+>>>>>>> origin/master
 			display: none;
 		}
 		&:hover {
 			background: $gray-lighter;
+<<<<<<< HEAD
 			.sps-text {
+=======
+			.sponsor-text {
+>>>>>>> origin/master
 				display: block;
 				position: absolute;
 				top: 0;
@@ -753,12 +769,21 @@
     		background: $gray-lightest;
     	}
     }
+<<<<<<< HEAD
 	    .select-text {
 		    padding: 5px;
 		    display: block;
 		    font-size: $font-size-large;
 		    color: $black;
 	    }
+=======
+    .select-text {
+	    padding: 5px;
+	    display: block;
+	    font-size: $font-size-large;
+	    color: $black;
+    }
+>>>>>>> origin/master
 	}
 	.overflow-area {
 		max-height: 230px;
@@ -804,7 +829,11 @@
 .toggle-area {
 	display: flex;
 	float: right;
+<<<<<<< HEAD
 	padding: 5px 10px;
+=======
+  padding: 5px 10px;
+>>>>>>> origin/master
 	span {
 		justify-content: center;
     align-items: center;
@@ -818,7 +847,11 @@
 .dropdown-group.open {
 	.btn-dropdown {
 		background-color: $gray-lightest;
+<<<<<<< HEAD
 	    color: $orange-light;
+=======
+    color: $orange-light;
+>>>>>>> origin/master
 
 	}
 	.dropdown-content {
@@ -828,6 +861,7 @@
 .flex-form {
 	display: flex;
 	position: relative;
+<<<<<<< HEAD
 	padding: 50px 10px 0 10px;
 	border-top: 1px solid $gray-light;
 	.centet-area {
@@ -836,6 +870,16 @@
 		align-items: center;
 		justify-content: center;
 	}
+=======
+  padding: 50px 10px 0 10px;
+	border-top: 1px solid $gray-light;
+	.centet-area {
+  	margin: 0 3px;
+  	display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+>>>>>>> origin/master
   legend {
   	position: absolute;
 		color: $gray;
@@ -898,8 +942,11 @@
 	}
 }
 .aside-area {
+<<<<<<< HEAD
 	position: relative;
 	overflow: hidden;
+=======
+>>>>>>> origin/master
 	.area-head {
 		position: relative;
 	}
@@ -917,6 +964,7 @@
 		@include ellipsis-1;
 	}
 }
+<<<<<<< HEAD
 .carousel-3 {
 	overflow: hidden;
 	height: 88px*3+40px;
@@ -1058,11 +1106,14 @@
 		}
 	}
 }
+=======
+>>>>>>> origin/master
 .keyword-area {
 	.keyword-box {
 		margin: 0 5px;
 		.keyword-text {
 			padding: 0px 7px;
+<<<<<<< HEAD
 		    line-height: 28px;
 		    font-size: 12px;
 		    color: #1e2430;
@@ -1076,6 +1127,21 @@
 		    	color: $white;
 		    	text-decoration: none;
 		    }
+=======
+	    line-height: 28px;
+	    font-size: 12px;
+	    color: #1e2430;
+	    text-align: center;
+	    border-radius: 999em;
+	    transition: 0.1s all ease-out;
+	    max-width: 186px;
+	    @include ellipsis-1;
+	    &:hover {
+	    	background-color: #e53331;
+	    	color: $white;
+	    	text-decoration: none;
+	    }
+>>>>>>> origin/master
 		}
 	}
 }
@@ -1104,6 +1170,7 @@
 			margin: 0;
 		}
 	}
+<<<<<<< HEAD
 }
 .keyword-area.bottom-area {
 	.keyword-text, .title, .more {
@@ -1157,4 +1224,6 @@
 			@include mul-box(2);
 		}
 	}
+=======
+>>>>>>> origin/master
 }
