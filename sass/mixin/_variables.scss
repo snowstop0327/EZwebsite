@@ -87,10 +87,10 @@ $radio-ripple-size: 15px;
 }
 
 @mixin item-flex-center {
-	align-items: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-webkit-box-pack: center;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
 }
 
 @mixin icon-right {
@@ -137,4 +137,6 @@ $radio-ripple-size: 15px;
   word-break: break-all;
   overflow: hidden;
 }
-
+@mixin link-style {
+  color: $link-color;
+}

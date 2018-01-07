@@ -588,6 +588,13 @@ input[type=number]::-webkit-outer-spin-button {
   border: 0;
 }
 
+@font-face {
+  font-family: "ez-website";
+  src: url("fonts/ez-website.eot?v=7");
+  src: url("fonts/ez-website.eot?v=7#iefix") format("embedded-opentype"), url("fonts/ez-website.woff?v=7") format("woff"), url("fonts/ez-website.ttf?v=7") format("truetype"), url("fonts/ez-website.svg?v=7#ez-website") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 [data-icon]:before {
   font-family: "ez-website" !important;
   content: attr(data-icon);
@@ -2390,7 +2397,7 @@ footer .app-area .app-border {
   position: absolute;
   top: 0;
   right: -8px;
-  background: url("../images/icons-sprite.png") no-repeat;
+  background: url("asset/images/icons-sprite.png") no-repeat;
   -moz-background-size: 180px auto;
   -o-background-size: 180px auto;
   -webkit-background-size: 180px auto;
@@ -2824,8 +2831,8 @@ footer .app-area .app-border {
   transform: scale(1.02, 1.02);
 }
 .like-area .like-pd:hover .pd-name {
-  color: #393f4e;
   text-decoration: none;
+  color: #1b5b9d;
 }
 .like-area .like-pd a:before {
   content: "";
@@ -2852,7 +2859,6 @@ footer .app-area .app-border {
 }
 .like-area .like-pd .pd-name {
   display: block;
-  color: #656c7d;
   margin: 0px;
   overflow: hidden;
   text-align: left;
@@ -2870,6 +2876,9 @@ footer .app-area .app-border {
   display: block;
   text-align: left;
   color: #7f8492;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .carousel-stage {
@@ -2931,9 +2940,6 @@ footer .app-area .app-border {
 
 .aside-area {
   margin: 0 0 20px 0;
-}
-.aside-area a {
-  color: #7f8492;
 }
 .aside-area .content {
   padding: 10px;
@@ -3209,6 +3215,12 @@ footer .app-area .app-border {
 .aside-area {
   position: relative;
   overflow: hidden;
+  border: 1px solid #7f8492;
+}
+.aside-area .title {
+  color: #393f4e;
+  font-weight: bold;
+  background: #ffffff;
 }
 .aside-area .area-head {
   position: relative;
@@ -3236,11 +3248,20 @@ footer .app-area .app-border {
 
 .carousel-3 {
   overflow: hidden;
-  height: 304px;
+  height: 370px;
 }
 
 .carousel-5 {
   overflow: hidden;
+  height: 590px;
+}
+
+.sp-box {
+  border: 1px solid #ff7f00;
+}
+.sp-box .title {
+  color: #ffffff;
+  background: #ff7f00;
 }
 
 .pd-box {
@@ -3250,10 +3271,11 @@ footer .app-area .app-border {
   display: flex;
   padding: 8px;
   color: #7f8492;
-  height: 88px;
+  height: 110px;
 }
 .pd-box a:hover {
   text-decoration: none;
+  color: #1b5b9d;
 }
 .pd-box:hover {
   background: rgba(232, 232, 232, 0.4);
@@ -3285,7 +3307,7 @@ footer .app-area .app-border {
 .pd-box .pd-info a, .pd-box .pd-info span {
   width: 100%;
   float: none;
-  margin: 0;
+  margin: 3px 0;
 }
 .pd-box .pd-info a:before {
   content: "";
@@ -3307,12 +3329,10 @@ footer .app-area .app-border {
   text-overflow: ellipsis;
   word-break: break-all;
   overflow: hidden;
+  font-size: 14px;
   line-height: 1.4;
-  height: 33.6px;
-  color: #656c7d;
-}
-.pd-box .pd-name:hover {
-  color: #393f4e;
+  height: 39.2px;
+  color: #2B81DA;
 }
 .pd-box .shop-name {
   display: block;
@@ -3321,7 +3341,9 @@ footer .app-area .app-border {
   overflow: hidden;
 }
 .pd-box .pd-price {
-  font-size: 14px;
+  font-size: 16px;
+  color: #e53331;
+  display: inline-block;
 }
 .pd-box .rank-tag {
   position: absolute;
@@ -3332,7 +3354,7 @@ footer .app-area .app-border {
   height: 18px;
   line-height: 18px;
   border-radius: 50%;
-  background: rgba(30, 36, 48, 0.7);
+  background: rgba(255, 103, 6, 0.9);
   color: #ffffff;
   text-align: center;
   font-weight: normal;
@@ -3359,11 +3381,12 @@ footer .app-area .app-border {
   min-width: 200px;
   margin: 5px auto;
   padding: 5px 10px;
-  border: 1px solid #c5c5c5;
+  border: 1px solid #ff7f00;
   border-radius: 2px;
+  color: #ff7f00;
 }
 .pd-box.large .btn:hover {
-  background: #c5c5c5;
+  background: #ff7f00;
   color: #ffffff;
 }
 .pd-box.large .shop-name {
@@ -3378,7 +3401,8 @@ footer .app-area .app-border {
   text-overflow: ellipsis;
   word-break: break-all;
   overflow: hidden;
-  height: 50.4px;
+  color: #2B81DA;
+  height: 58.8px;
   text-align: justify;
   width: auto;
   float: none;
@@ -3393,8 +3417,6 @@ footer .app-area .app-border {
 
 .page-area {
   width: 100%;
-}
-.page-area .dot {
   margin: 5px auto;
   text-align: center;
 }
@@ -3408,8 +3430,8 @@ footer .app-area .app-border {
   cursor: pointer;
 }
 .page-area .page-item.active {
-  background: #7f8492;
-  border-color: #7f8492;
+  background: #ff7f00;
+  border-color: #ff7f00;
 }
 
 .keyword-area .keyword-box {
@@ -3461,22 +3483,6 @@ footer .app-area .app-border {
   margin: 0;
 }
 
-.keyword-area.bottom-area .keyword-text, .keyword-area.bottom-area .title, .keyword-area.bottom-area .more {
-  color: #656c7d;
-}
-.keyword-area.bottom-area .more {
-  line-height: 28px;
-  height: auto;
-}
-.keyword-area.bottom-area .more:before {
-  margin: 0;
-}
-.keyword-area.bottom-area .keyword-text:hover {
-  background-color: initial;
-  color: #656c7d;
-  text-decoration: underline;
-}
-
 .aside-area .article-box {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3486,7 +3492,7 @@ footer .app-area .app-border {
   flex-flow: wrap;
   position: relative;
   font-size: 12px;
-  border-bottom: 1px solid #c5c5c5;
+  border-bottom: 1px solid #e8e8e8;
   margin: 0;
   color: #7f8492;
 }
@@ -3494,17 +3500,22 @@ footer .app-area .app-border {
   border-bottom: 0;
 }
 .aside-area .article-box:hover {
-  background: rgba(232, 232, 232, 0.4);
+  background: whitesmoke;
 }
 .aside-area .article-box:hover img {
   opacity: 0.8;
 }
+.aside-area .article-box:hover .read-more {
+  background: whitesmoke;
+}
 .aside-area .article-box .img-box {
   height: 120px;
+  padding: 10px;
+  margin-top: 10px;
 }
 .aside-area .article-box .atcl-title {
   font-size: 14px;
-  color: #656c7d;
+  color: #393f4e;
   margin: 10px 10px 0;
 }
 .aside-area .article-box .atcl-title:before {
@@ -3527,6 +3538,20 @@ footer .app-area .app-border {
   text-overflow: ellipsis;
   word-break: break-all;
   overflow: hidden;
+}
+.aside-area .article-box .read-more {
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  bottom: 0;
+  color: #2B81DA;
+  background: #ffffff;
+  padding: 1px 2px 7px 0px;
+}
+.aside-area .article-box .read-more:before {
+  content: "...";
+  padding-left: 5px;
+  padding-right: 2px;
 }
 
 .index-bg {
@@ -5290,7 +5315,7 @@ ul.assistant {
 .error-area {
   max-height: 235px;
   overflow: hidden;
-  background: url("asset/images/error-bg.png") #f5f5f5;
+  background: url("/asset/images/error-bg.png") #f5f5f5;
   background-size: 100%;
   border-radius: 2px;
   font-size: 16px;

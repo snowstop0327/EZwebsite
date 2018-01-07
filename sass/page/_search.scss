@@ -26,7 +26,7 @@
 			height: 32px;
     		overflow: hidden;
     		.title{
-    			float: left;
+	    			float: left;
 					display: inline-block;
 					line-height: 32px;
 					color: $gray-darker;
@@ -93,7 +93,7 @@
 					position: absolute;
 					top: 0;
 					right: -8px;
-					background: url('/asset/images/icons-sprite.png') no-repeat;
+					background: url('asset/images/icons-sprite.png') no-repeat;
 				    @include background-size(180px auto);
 					background-position: 0 -54.5px;
 					height: 17px;
@@ -546,8 +546,9 @@
 				transform: scale(1.02, 1.02);
 			}
 			.pd-name {
-				color: $gray-darker;
+				// color: $gray-darker;
 				text-decoration: none;
+				color: $link-hover-color;
 			}
 		}
 		a {
@@ -567,11 +568,11 @@
 		}
 		.pd-name{
 			display: block;
-			color: $gray-dark;
 			margin: 0px;
 			overflow: hidden;
 			text-align: left;
 			height: $font-size-small*1.4*2;
+
 		}
 		.pd-price{
 			display: block;
@@ -586,6 +587,7 @@
 			// font-size: $font-size-small;
 			text-align: left;
 			color: $gray;
+			@include ellipsis-1;
 		}
 	}
 }
@@ -648,7 +650,7 @@
 .aside-area{
 	margin: 0 0 20px 0;
 	a {
-		color: $gray;
+		// color: $gray;
 	}
 	.content{
 		padding: 10px;
@@ -900,6 +902,12 @@
 .aside-area {
 	position: relative;
 	overflow: hidden;
+	border: 1px solid $gray;
+	.title {
+		color: $gray-darker;
+		font-weight: bold;
+		background: $white;
+	}
 	.area-head {
 		position: relative;
 	}
@@ -917,27 +925,39 @@
 		@include ellipsis-1;
 	}
 }
+$pd-box-height: 110px;
 .carousel-3 {
 	overflow: hidden;
-	height: 88px*3+40px;
+	height: $pd-box-height*3+40px;
 }
 .carousel-5 {
 	overflow: hidden;
-	// height: 
+	height: $pd-box-height*5+40px;
+}
+.sp-box {
+	border: 1px solid $orange-light;
+	.title {
+		color: $white;
+		background: $orange-light;
+	}
 }
 .pd-box {
 	position: relative;
 	display: flex;
 	padding: 8px;
 	color: $gray;
-	height: 88px;
+	height: $pd-box-height;
 	a {
 		&:hover {
 			text-decoration: none;
+			color: $link-hover-color;
 		}
 	}
 	&:hover {
 		background: rgba($gray-lighter,0.4);
+		img {
+			// transform: scale(1.02, 1.02);
+		}
 	}
 	.pd-pic {
 		position: relative;
@@ -956,7 +976,7 @@
 		a, span {
 			width: 100%;
 			float: none;
-			margin: 0;
+			margin: 3px 0;
 		}
 		a {
 			&:before {
@@ -966,11 +986,12 @@
 	}
 	.pd-name {
 		@include mul-box(2);
+		font-size: $font-size-base;
 		line-height: 1.4;
-		height: $font-size-small*2*1.4;
-		color: $gray-dark;
+		height: $font-size-base*2*1.4;
+		@include link-style;
 		&:hover {
-			color: $gray-darker;
+			// color: $gray-darker;
 		}
 	}
 	.shop-name {
@@ -978,7 +999,10 @@
 		@include ellipsis-1;
 	}
 	.pd-price {
-		font-size: $font-size-base;
+		font-size: $font-size-large;
+		color: $red;
+		display: inline-block;
+		// margin: 2px 0;
 	}
 	.rank-tag {
 		position: absolute;
@@ -989,7 +1013,7 @@
 		height: 18px;
 		line-height: 18px;
 		border-radius: 50%;
-		background: rgba($black,0.7);
+		background: rgba($orange,0.9);
 		color: $white;
 		text-align: center;
 		font-weight: normal;
@@ -1013,10 +1037,11 @@
 			min-width: 200px;
 			margin: 5px auto;
 			padding: 5px 10px;
-			border: 1px solid $gray-light;
+			border: 1px solid $orange-light;
 			border-radius: 2px;
+			color: $orange-light;
 			&:hover {
-				background: $gray-light;
+				background: $orange-light;
 				color: $white;
 			}
 		}
@@ -1025,7 +1050,8 @@
 		}
 		.pd-name {
 			@include mul-box(3);
-			height: $font-size-small*3*1.4;
+			@include link-style;
+			height: $font-size-base*3*1.4;
 			text-align: justify;
 			width: auto;
 			float: none;
@@ -1040,10 +1066,8 @@
 }
 .page-area {
 	width: 100%;
-	.dot {
-		margin: 5px auto;
-		text-align: center;
-	}
+	margin: 5px auto;
+	text-align: center;
 	.page-item {
 		display: inline-block;
 		width: 12px;
@@ -1053,8 +1077,8 @@
 		margin: 5px;
 		cursor: pointer;
 		&.active {
-			background: $gray;
-			border-color: $gray;
+			background: $orange-light;
+			border-color: $orange-light;
 		}
 	}
 }
@@ -1105,49 +1129,54 @@
 		}
 	}
 }
-.keyword-area.bottom-area {
-	.keyword-text, .title, .more {
-		color: $gray-dark;
-	}
-	.more {
-		line-height: 28px;
-		height: auto;
-		&:before {
-			margin: 0;
-		}
-	}
-	.keyword-text {
-		&:hover {
-			background-color: initial;
-	    	color: $gray-dark;
-	    	text-decoration: underline;
-		}
-	}
-}
+// .keyword-area.bottom-area {
+// 	.keyword-text, .title, .more {
+// 		color: $gray-dark;
+// 	}
+// 	.more {
+// 		line-height: 28px;
+// 		height: auto;
+// 		&:before {
+// 			margin: 0;
+// 		}
+// 	}
+// 	.keyword-text {
+// 		&:hover {
+// 			background-color: initial;
+// 	    	color: $gray-dark;
+// 	    	text-decoration: underline;
+// 		}
+// 	}
+// }
 .aside-area {
 	.article-box {
 		display: flex;
 	    flex-flow: wrap;
 		position: relative;
 		font-size: $font-size-small;
-		border-bottom: 1px solid $gray-light;
+		border-bottom: 1px solid $gray-lighter;
 		margin: 0;
 		color: $gray;
 		&:last-child {
 			border-bottom: 0;
 		}
 		&:hover {
-			background: rgba($gray-lighter,0.4);
+			background: lighten($gray-lighter,5%);
 			img {
 				opacity: 0.8;
+			}
+			.read-more {
+				background: lighten($gray-lighter,5%);
 			}
 		}
 		.img-box {
 			height: 120px;
+			padding: 10px;
+			margin-top: 10px;
 		}
 		.atcl-title {
 			font-size: $font-size-base;
-			color: $gray-dark;
+			color: $gray-darker;
 			margin: 10px 10px 0;
 			&:before {
 				@include block-link;
@@ -1155,6 +1184,20 @@
 		}
 		.atcl-title, .atcl-content {
 			@include mul-box(2);
+		}
+		.read-more {
+			position: absolute;
+			z-index: 2;
+			right: 10px;
+			bottom: 0;
+			color: $link-color;
+			background: $white;
+			padding: 1px 2px 7px 0px;
+			&:before {
+				content: "...";
+				padding-left: 5px;
+				padding-right: 2px;
+			}
 		}
 	}
 }

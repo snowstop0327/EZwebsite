@@ -1,16 +1,16 @@
 @charset "UTF-8";
 
-// @font-face {
-//   font-family: "ez-website";
-//   src:url("fonts/ez-website.eot?v=7");
-//   src:url("fonts/ez-website.eot?v=7#iefix") format("embedded-opentype"),
-//     url("fonts/ez-website.woff?v=7") format("woff"),
-//     url("fonts/ez-website.ttf?v=7") format("truetype"),
-//     url("fonts/ez-website.svg?v=7#ez-website") format("svg");
-//   font-weight: normal;
-//   font-style: normal;
+@font-face {
+  font-family: "ez-website";
+  src:url("fonts/ez-website.eot?v=7");
+  src:url("fonts/ez-website.eot?v=7#iefix") format("embedded-opentype"),
+    url("fonts/ez-website.woff?v=7") format("woff"),
+    url("fonts/ez-website.ttf?v=7") format("truetype"),
+    url("fonts/ez-website.svg?v=7#ez-website") format("svg");
+  font-weight: normal;
+  font-style: normal;
 
-// }
+}
 
 [data-icon]:before {
   font-family: "ez-website" !important;
@@ -252,7 +252,7 @@
 }
 .icons-atm, .icons-card, .icons-cart, .icons-delete-btn, .icons-ez-app, .icons-ez-plugin, .icons-familymart, .icons-gift, .icons-like, .icons-logo, .icons-open-gift, .icons-seven {
   display: inline-block;
-  background: url('/asset/images/icons-sprite.png') no-repeat;
+  background: url('../images/icons-sprite.png') no-repeat;
   @include background-size(180px auto);
 }
 .icons-atm {
