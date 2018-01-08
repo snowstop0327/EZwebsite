@@ -93,7 +93,7 @@
 					position: absolute;
 					top: 0;
 					right: -8px;
-					background: url('asset/images/icons-sprite.png') no-repeat;
+					background: url('../images/icons-sprite.png') no-repeat;
 				    @include background-size(180px auto);
 					background-position: 0 -54.5px;
 					height: 17px;
@@ -527,8 +527,15 @@
 }
 .like-area{
 	margin: 20px 0 0 0;
+	cursor: pointer;
 	position: relative;
 	overflow: hidden;
+	border: 1px solid lighten($gray,20%);
+	.title {
+		color: $gray-darker;
+		font-weight: bold;
+		background: lighten($gray-lighter,6%);
+	}
 	.like-pd{
 		float: left;
 		display: inline-block;
@@ -541,8 +548,9 @@
 		line-height: 1.4;
 
 		&:hover {
+			background: rgba($gray-lighter,0.4);
 			img {
-				opacity: 0.8;
+				// opacity: 0.8;
 				transform: scale(1.02, 1.02);
 			}
 			.pd-name {
@@ -794,8 +802,8 @@
 	border: 0;
 	transition: 0.3s all ease-out;
 	padding: 5px 10px;
-  margin: 10px 5px;
-  color: $gray-dark;
+	margin: 10px 5px;
+	color: $gray-dark;
 	&:after {
 		content: "\69";
 		vertical-align: middle;
@@ -902,11 +910,11 @@
 .aside-area {
 	position: relative;
 	overflow: hidden;
-	border: 1px solid $gray;
+	border: 1px solid lighten($gray,20%);
 	.title {
 		color: $gray-darker;
 		font-weight: bold;
-		background: $white;
+		background: lighten($gray-lighter,6%);
 	}
 	.area-head {
 		position: relative;
