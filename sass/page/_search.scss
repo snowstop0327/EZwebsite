@@ -576,18 +576,19 @@
 		}
 		.pd-name{
 			display: block;
-			margin: 0px;
+			margin: 3px 0px;
 			overflow: hidden;
 			text-align: left;
-			height: $font-size-small*1.4*2;
+			font-size: $font-size-base;
+			height: $font-size-base*1.4*2;
 
 		}
 		.pd-price{
 			display: block;
 			font-family: $font-family-price;
-			font-weight: normal;
-			font-size: $font-size-xlarge;
-			color: $orange-light;
+			font-weight: bold;
+			font-size: $font-size-xxlarge;
+			color: $red;
 			text-align: left;
 		}
 		.platform{

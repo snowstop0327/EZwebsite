@@ -2905,17 +2905,18 @@ footer .app-area .app-border {
 }
 .like-area .like-pd .pd-name {
   display: block;
-  margin: 0px;
+  margin: 3px 0px;
   overflow: hidden;
   text-align: left;
-  height: 33.6px;
+  font-size: 14px;
+  height: 39.2px;
 }
 .like-area .like-pd .pd-price {
   display: block;
   font-family: "Helvetica";
-  font-weight: normal;
-  font-size: 18px;
-  color: #ff7f00;
+  font-weight: bold;
+  font-size: 20px;
+  color: #e53331;
   text-align: left;
 }
 .like-area .like-pd .platform {
